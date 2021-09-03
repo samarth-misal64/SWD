@@ -10,9 +10,9 @@ $inputVNameP = $_POST['inputVNameP'];
 if (!empty($inputVNameP) || !empty($inputPhoneP) || !empty($inputAddressP) || !empty($inputStateP) || !empty($inputCityP) || !empty($inputVNameP)){
 
     $host = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbname = "registration";
+    $dbUsername = "epiz_29608211";
+    $dbPassword = "vs0H5sWYwnS4CK8";
+    $dbname = "epiz_29608211_registration";
 
     //Create conn
 

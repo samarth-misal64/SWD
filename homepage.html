@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>VitSocials</title>
+    <style>
+        a.button.four:before, a.button.four:after{
+    content: '';
+    position: absolute; 
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    transition: width 0.3s ease;
+}
+
+a.button.four:before{
+    bottom: 0;
+    right: 50%;
+}
+a.button.four:after{
+    bottom: 0;
+    left: 50%;
+}
+a.button.four:hover:after, a.button.four:hover:before{
+    width: 40%;
+    transition: width .2s ease;
+}
+
+        .playlist{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            position: relative;
+            padding: 10px;
+        }
+        a.playlist.five:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: white;
+            width: 0%;
+            height: 100%;
+            
+            border-bottom: 2px solid white;
+            
+            transition: width 0.3s ease;
+        }
+        
+        a.playlist.five:hover:after{
+            left: 0;
+            width: 100%;
+            color: white;
+            transition: width .3s ease;
+        }
+        .button {
+          border-radius: 4px;
+          background-color: #d4322b;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 18px;
+          padding: 20px;
+          width: 100px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+          color: white;
+          font-weight: bold;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+
+    .hover-img {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 8px;
+    max-width: 95%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    }
+
+    .hover-img * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+    }
+
+    .hover-img:before,
+    .hover-img:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 32px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+    }
+
+    .hover-img img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+    }
+
+    .hover-img figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /*text-transform: uppercase;*/
+    }
+
+    .hover-img:hover:before,
+    .hover-img:hover:after {
+    transform: scale(1);
+    opacity: 1;
+    }
+
+    .hover-img:hover > img {
+    opacity: 0.7;
+    }
+
+    .hover-img:hover figcaption {
+    opacity: 1;
+    }
+        </style>
+</head>
+
+<body style="background-color: #f4f7f6">
+
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="row" style="padding: 2%;">
+            <div class="col-3" style="line-height: 1.2vw;">
+                <a class="text-end" href="homepage.html" style="font-size: 2vw; color: #234d20; text-decoration: none;"> 
+                    <span>
+                        <span style="margin-top: 100%; ">Social Welfare</span><br>
+                        <span style="padding-left: 10%;">& Development</span>
+                    </span>
+                    
+                </a>
+            </div>
+            <div class="col-7" style="line-height: 1.2vw;">
+                <a class="nav-link active text-end" aria-current="page"
+                    href="html/aatmabodh_reg.html" st style="  display: block; color: #d4322b; text-decoration: none; position: relative;">
+                    <span class="text-center align-middle" style="font-size: 2vw; padding-right: 0vw;">
+                            <span class="align-middle"  >Aatmabodh</span><br>
+                            <span class="align-middle" style="font-size: 2.0vw;">Registration</span>
+                    </span>
+                </a>
+            </div>
+            <div class="col-2 justify-content-center">
+                <img src="img/logo-vit-1.png" align="center" class="rounded mx-auto d-block" alt="..." style="width: 100%;
+                max-width: 40px;
+            height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <!-- description -->
+    <div class="container-fluid">
+
+        <!-- WHO WE ARE -->
+        <div class="container-fluid">
+            <div class="container-fluid" style="background-color: #f4f7f6">
+                <div class="card mb-3" style="border: none;" style="background-color: #f4f7f6">
+                    <div class="row g-0" style="position: absolute; height: 10em; z-index: 2;">
+                        <div class="col-md-12">
+                            <div class="card-body">
+                                <p class="card-title text-center" style="line-height: 0.7; /*padding-left:15%;*/">
+                                    <span style="color: #234d20; font-size: 7vw; "><b><i>WHO<br></i></b></span>
+                                    <span style="color: #c9df8a; font-size: 9vw;"><b><i>WE ARE</i></b><span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="position: relative; padding: 0%; padding-top: 10vw; z-index: 1; border: none;">
+                    <img src="img/who.png" style="z-index: 1; background-color: #45597e;
+                    height: 80%;
+                    width: 100%;
+                    border-radius: 50%;">
+                </div>
+            </div>
+            <div class="container-fluid" id="who_we_are" align="center">
+                <p style="padding-block: 5%;"><b><i>We at the social welfare and development committee, readily work with a motto to empower society and transform lives to bring out the positive changes in the society. We aim to be a helping hand towards everyone in society by organizing various events and activities throughout the year. Main strength of our committee lies in equality and unity amongst every member. We are always ready to do someone a good turn to be good for society with no expectation in return.</i></b></p>
+            </div>
+        </div>
+
+        <!-- OUR MISSION -->
+        <div class="row featurette d-flex justify-content-center align-items-center" style="background-color: #234d20;">
+            <div class="col-md-7">
+                <h5 class="card-title" style="font-size: 5vw; color: #c9df8a; text-align: center;"><b>OUR <span
+                            style="color:#c9df8a;">MISSION</span></b></h5>
+                <p class="card-text text-center" style="color: white;"><i>To formulate, implement, and coordinate policies and programs for the needs and welfare of poor and needy people, as well as to provide quality social services to help them in the face of challenges in life. We promote social and family responsibilities in order to develop individual potential, empower, and build a team that is innovative, cohesive, and professional.</i></p>
+            </div>
+            <div class="col-md-5 img-fluid" align="center">
+                <img class="img-fluid" src="img/OurM.png">
+
+            </div>
+        </div>
+
+        <!-- OUR PROMISE -->
+        <div class="row featurette d-flex justify-content-center align-items-center" style="background-color: #234d20;">
+            <div class="col-md-5 img-fluid" align="center">
+                <img class="img-fluid" src="img/OurM.png">
+            </div>
+            <div class="col-md-7">
+                <h5 class="card-title" style="font-size: 5vw; color: #c9df8a; text-align: center;"><b>OUR <span
+                            style="color:#c9df8a;">PROMISE</span></b></h5>
+                <p class="card-text text-center" style="color: white;"><i>At SW&D, we promise to create a safe-space where people, who share our objective, can express themselves freely and work together as a team. We promise to work with vigor and diligence to ameliorate society through a myriad of activities. We also vow to utilize our platform to inculcate social values and helpful nature amongst people and move one step closer to achieving our ultimate goal-sustainable development.</i></p>
+            </div>
+        </div>
+
+        <!-- aatmabodh -->
+        <div class="container-fluid" style="border: none; background-color: #f4f7f6;">
+
+            <div class="text-center" style="font-size: 7vw; color: #d4322b; margin: 30px;"><b>
+                    AATMABODH</b>
+            </div>
+            <marquee width="100%" direction="up" height="100px" scrolldelay="550";> <p style="text-align: center; padding-right: 5%; padding-left: 5%;">Aatmabodh is the initiative taken by SW&D for the betterment of society. It is a flagship event of our college. Among the kingpins are the elderly and homemakers. Senior citizens and homemakers learn basic skills from students at our college. Pandemics could not dampen the enthusiasm of students. The committee members made last year's event a huge success by conducting it online with a high level of dedication and willingness to do whatever it takes. <br><br><br><br>आत्मबोध हा SW&D कमिटी मार्फत वर्षानुवर्षे चालत आलेला एक वार्षिक उपक्रम आहे. यात कॉलेजचे विद्यार्थी घरोघरी जाऊन जेष्ठ नागरिक व लहान मुलांना आवश्यक असणाऱ्या प्राथमिक गोष्टी शिकवतात. आत्मबोध हा आपल्या कॉलेजचा एक प्रमुख उपक्रम असून यात सहभागी होणाऱ्या विद्यार्थ्यांची संख्या जास्त आहे. मागील वर्षी कोरोनामुळे या उपक्रमाला स्थगिती येईल असे वाटत असताना सर्व कमिटी मेंबर्सनी निर्धार करून ऑनलाइन आत्मबोध पार पाडून दाखविला.</p></marquee>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100" style="border: none;">
+                        <img src="img/left.png" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="border: none;">
+                        <img src="img/Online Aatmbodh Logo png.png" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100" style="border: none;">
+                        <img src="img/right.png" class="card-img" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid my-4" align="center" style="padding: 1em;">
+                <a class="button" href="html/aatmabodh_reg.html" role="button" ><span style="text-transform: uppercase;">Register Now</span></a>
+            </div>
+        </div>
+
+        <!-- rr2.0 -->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<figure class="hover-img" >
+            <img src="img/rr.jpg" class="card-img" class="center"/>
+            <figcaption>
+              <h3>This year the club organised a 6-day event Rejuvenating Rashtra 2.0 which we believe invigorated a new spark among each one of us to do more and work for the welfare of the society. We had various speakers conduct the session on few of the crucial issues that need attention at this hour. Hearing about their journey and work invoked a passion among the attendees and boosted their enthusiasm about social work.</h3>
+            <a href="https://youtube.com/playlist?list=PL2pq_tvfOYAgUUr9r0-vchitpKskZxiFL" target="_blank"  class="playlist five" style="text-transform: uppercase;">LINK TO PLAYLIST</a>
+            </figcaption>
+          </figure>
+<!--      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe  width="560" height="100" src="https://www.youtube.com/embed/XCNyNFXfktU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<iframe  width="560" height="100" src="https://www.youtube.com/embed/tdPzlMS48UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- footer -->
+    <div class="container-fluid" style="background-color: #f4f7f6;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+            <div class="container-fluid justify-content-center" align="center">
+                <img src="img/swdlogo2.png" alt="Social Welfare & Development" style="width:20%; height:20%;">
+                <p><b>
+                        Vishwakarma Institute of Technology,
+                        <br>
+                        Upper Indira Nagar, Bibewadi,
+                        <br>
+                        Pune-411037</b>
+                </p>
+                <a href="mailto:vitswd@vit.edu" target="_blank"
+                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
+                    <img width="3.5%" height="3.5%" src="https://image.flaticon.com/icons/png/512/888/888853.png"
+                        class="loaded">
+                </a>
+                <a href="https://www.instagram.com/vitsocials/" target="_blank"
+                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
+                    <img src="https://image.flaticon.com/icons/png/512/1384/1384063.png" width="3%" height="3%"
+                        data-icon_src="https://www.flaticon.com/svg/vstatic/svg/1384/1384063.svg?token=exp=1630352769~hmac=a83516b21388b686df5b454e07ebfd8a">
+                </a>
+                <a href="https://www.facebook.com/vitsocials" target="_blank"
+                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
+                    <img width="3%" height="3%" src="https://image.flaticon.com/icons/png/512/733/733547.png"
+                        class="loaded">
+                </a>
+                <a href="https://www.linkedin.com/company/vit-social-welfare-development/" target="_blank"
+                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
+                    <img width="3%" height="3%" src="https://image.flaticon.com/icons/png/512/174/174857.png"
+                        class="loaded">
+                </a>
+                <a href="https://www.youtube.com/channel/UCJnaNm8Ns08rUIhsdFM2fhA" target="_blank"
+                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
+                    <img width="3.5%" height="3.5%" src="https://image.flaticon.com/icons/png/512/1384/1384060.png"
+                        class="loaded">
+                </a>
+            </div>
+            <p class="col-md-4 mb-0 text-muted">© VIT SW&D</p>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Back to Top</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="../js/homepage.js"></script>
+</body>
+
+</html>
