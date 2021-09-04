@@ -6,375 +6,717 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
    <meta name="HandheldFriendly" content="true">
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
     <title>SWD</title>
     <link rel="stylesheet" type="text/css" href="../css/aatmabodh_reg.css">
-    <link rel=”stylesheet” href=”bootstrap.css”>
-  </head>
-
+    <!-- <link rel=”stylesheet” href=”bootstrap.css”> -->
   
-<body>
-  <div class="card mb-3">
-    <img class="card-img-top" src="../img/slider.jpg" alt="Card image cap">
-    <div class="card-body" style="width: 90%; height: 90%; border: solid white; position:absolute; left: 5%; top: 5%; bottom: 5%; right: 5%;">
-    </div>
-  </div>
+  <style type="text/css">
+    
+    .testimonials-clean {
+      color:#313437;
+      background-color:#eef4f7;
+    }
+    
+    .testimonials-clean p {
+      color:#7d8285;
+    }
+    
+    .testimonials-clean h2 {
+      font-weight:bold;
+      margin-bottom:40px;
+      padding-top:40px;
+      color:inherit;
+    }
+    
+    @media (max-width:767px) {
+      .testimonials-clean h2 {
+        margin-bottom:25px;
+        padding-top:25px;
+        font-size:24px;
+      }
+    }
+    
+    .testimonials-clean .intro {
+      font-size:16px;
+      max-width:500px;
+      margin:0 auto;
+    }
+    
+    .testimonials-clean .intro p {
+      margin-bottom:0;
+    }
+    
+    .testimonials-clean .people {
+      padding:50px 0 20px;
+    }
+    
+    .testimonials-clean .item {
+      margin-bottom:32px;
+    }
+    
+    @media (min-width:768px) {
+      .testimonials-clean .item {
+        height:220px;
+      }
+    }
+    
+    .testimonials-clean .item .box {
+      padding:30px;
+      background-color:#fff;
+      position:relative;
+    }
+    
+    .testimonials-clean .item .box:after {
+      content:'';
+      position:absolute;
+      left:30px;
+      bottom:-24px;
+      width:0;
+      height:0;
+      border:15px solid transparent;
+      border-width:12px 15px;
+      border-top-color:#fff;
+    }
+    
+    .testimonials-clean .item .author {
+      margin-top:28px;
+      padding-left:25px;
+    }
+    
+    .testimonials-clean .item .name {
+      font-weight:bold;
+      margin-bottom:2px;
+      color:inherit;
+    }
+    
+    .testimonials-clean .item .title {
+      font-size:13px;
+      color:#9da9ae;
+    }
+    
+    .testimonials-clean .item .description {
+      font-size:15px;
+      margin-bottom:0;
+    }
+    
+    .testimonials-clean .item img {
+      max-width:40px;
+      float:left;
+      margin-right:12px;
+      margin-top:-5px;
+    }
+    
+    
+  </style>
 
-  <div class="container">
-       <div class="row">
-           <div class="col-md-6">
-             <div class="g-col-6">
-                <div class="card-body">
-                      <p class="text-center text-uppercase" style="color: #d4322b; font-size: 5vw; padding-right: 2vw;"><b>AATMABODH</b>
-                    </p>
+</head> 
+<body class="example">
+  <!-- Image -->
+                      <div class="card mb-3">
+                           <img class="card-img-top" src="../img/slider.jpg" alt="Card image cap">
+                              <div class="card-body" style="width: 90%; height: 90%; border: solid white; position:absolute; left: 5%; top: 5%; bottom: 5%; right: 5%;">
+                              </div>
+                      </div>
+
+
+
+            
+             
+
+                   
+                      <div class="container">
+                          <div class="row">
+                                                
+                               <!-- text and image -->
+                               <div class="col-md-6">
+                                    <div class="g-col-6">
+                                      <div class="row featurette d-flex justify-content-center align-items-center">
+                                        <div class="card-body">
+                                          <div class="title">
+                                             <h1 class="card-title text-uppercase" style=" color: #d4322b; text-align: center; "><b>AATMABHOD</b></h1>
+                                          </div>
+
+                                            
                     
-                    <p class="text-center" style="font-size: 1.2vw; padding-right: 2vw;">
+                                              <p class="card-text text-center" style="font-size: small;" >
                     
-                      <span><b>means</b></span>
-                      <span class="text-uppercase" style="color: #d4322b;"><b>Self-realization</b></span> 
+                                              <span><b>means</b></span>
+                                              <span class="text-uppercase" style="color: #d4322b; "><b>Self-realization</b></span> 
                      
-                    </p>
+                                              </p>
                   
-                    <p class="text-center" style="font-size: 1.2vw; padding-right: 2vw;"><b>become <span class="text-uppercase" style="color: #d4322b;">a change-maker</span> by volunteering and help the participants to realize their inner strength.</b></p> 
-                </div>
- <!--                <p class="card-title" style="font-size: 20vw; ">
-                <div class="text-end" style="left: 30px; top: 50px; font-size: 50px; padding-bottom: 0px; margin-bottom: 0px;">
-                    <span style="color: #d4322b; padding-right: 10%;">AATMABHOD   
-                </div>
-            </p> -->
+                                             <p class="card-text text-center " style="font-size: small;"><b>become <span class="text-uppercase" style="color: #d4322b; font-size: small;">a change-maker</span> by volunteering and help the participants to realize their inner strength.</b></p> 
+
+                                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                         
+                                        </div>
+                                          <!--                <p class="card-title" style="font-size: 20vw; ">
+                                           <div class="text-end" style="left: 30px; top: 50px; font-size: 50px; padding-bottom: 0px; margin-bottom: 0px;">
+                                           <span style="color: #d4322b; padding-right: 10%;">AATMABHOD   
+                                             </div>
+                                                 </p> -->
                   
-             </div>
-             <div class="image1">
+                                    </div>
 
-                       <img src="../img/i1.jpg" class="img-fluid" alt="image">
-                       <div class="overlay">
-                         <div class="text">Aatmabodh</div>
-                       </div>
+                                    <div class="image1">
 
-             </div>
-          </div>
+                                          <img src="../img/i1.jpg" class="img-fluid" alt="image">
+                                          <div class="overlay">
+                                             <div class="text">Aatmabhod</div>
+                                          </div>
+
+                                    </div>
+                               </div>
 
 
-           
+                              <!-- Volunteer Application Form -->
 
-            
-<div class="col-md-6">  
-   <div class="flip-card">
-   	   <div class="flip-card-inner" id="form1">
-   	   	<div class="flip-card-front">
+                             
+                                <div class="col-md-6 ">  
+                                      <div class="flip-card">
+                                            <div class="flip-card-inner" id="form1">
+                                                <div class="flip-card-front">
 
-       <form action="validation.php" method="POST" id="form" class="row g-3">
-       	      <h4>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</h4>
+                                                  <form action="validation.php" method="POST" myForm="text-center" id="form" class="row g-3">
+                                                        <h4>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</h4>
 
-              <h5 style="">Volunteer Application Form for <span style="color: #d4322b;">non-VITian Students</span>.</h5>
+                                                        <h5 >Volunteer Application Form for <span style="color: #d4322b;">non-VITian Students</span>.</h5>
               
-              <div class="text-center">
-                <h5 style="text-align: center;"> VIT student?</h5>
-                <button type="button" class="btn btn-secondary btn-sm" onclick="flip()">CLICK HERE</button>
-               </div>
+                                                        <div class="text-center">
+                                                              <h5 style="text-align: center;"> VIT student?</h5>
+                                                              <button type="button" class="btn btn-secondary btn-sm" onclick="flip()">CLICK HERE</button>
+                                                        </div>
 
 
-       	      <div class="col-12">
-                 <label for="inputName" class="form-label">Full Name</label>
-                 <input type="text" class="form-control" name="inputName" placeholder="Shraddha Navnath Kanase" required>
-            </div> 
+                                                        <div class="col-12">
+                                                            <label for="inputName" class="form-label">Full Name</label>
+                                                            <input type="text" class="form-control" name="inputName" placeholder="Shraddha Navnath Kanase" required>
+                                                        </div> 
 
-            <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" name="inputEmail4" placeholder="shraddha.kanase19@vit.edu" required>
-            </div>
+                                                        <div class="col-md-6">
+                                                              <label for="inputEmail4" class="form-label">Email</label>
+                                                              <input type="email" class="form-control" name="inputEmail4" placeholder="shraddha.kanase19@vit.edu" required>
+                                                        </div>
 
-             <div class="col-md-6">
-                  <label for="inputPhone" class="form-label">WhatsApp Number</label>
-                  <input type="Phone" class="form-control" name="inputPhone" placeholder="1234567890" required>
-            </div>
+                                                        <div class="col-md-6">
+                                                              <label for="inputPhone" class="form-label">WhatsApp Number</label>
+                                                              <input type="Phone" class="form-control" name="inputPhone" placeholder="1234567890" required>
+                                                        </div>
 
 
            
 
-            <div class="col-12">
-                 <label for="inputAddress" class="form-label">Address</label>
-                 <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St" required>
-            </div>
+                                                         <div class="col-12">
+                                                              <label for="inputAddress" class="form-label">Address</label>
+                                                              <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St" required>
+                                                         </div>
 
-              <div class="col-md-6">
-                <label for="inputYear" class="form-label">Are you a student?</label>
+                                                         <div class="col-md-6">
+                                                               <label for="inputYear" class="form-label">Are you a student?</label>
                
 
-            <select name="inputYear" class="form-select">
-                <option selected>Yes</option>
-                <option value="1">Yes</option>
-                <option value="2">No</option>
+                                                               <select name="inputYear" class="form-select">
+                                                                       <option selected>Yes</option>
+                                                                       <option value="1">Yes</option>
+                                                                       <option value="2">No</option>
                 
-             </select>
-          </div>
+                                                               </select>
+                                                         </div>
 
-           <div class="col-6">
-                 <label for="inputOname" class="form-label">Name of your Organization</label>
-                 <input type="text" class="form-control" name="inputOname" placeholder="ABC....">
-            </div> 
+                                                         <div class="col-md-6">
+                                                                <label for="inputOname" class="form-label">Name of your Organization</label>
+                                                                <input type="text" class="form-control" name="inputOname" placeholder="ABC....">
+                                                         </div> 
 
 
-             <div class="col-12">
-                 <label for="inputText" class="form-label">Is there anything else you would like us to know?</label>
-                 <input type="text" class="form-control" name="inputText">
-            </div> 
+                                                         <div class="col-12">
+                                                               <label for="inputText" class="form-label">Is there anything else you would like us to know?</label>
+                                                                <input type="text" class="form-control" name="inputText">
+                                                         </div> 
 
-            <div class="col-md-12">
-                <label for="inputReferral" class="form-label">How did you hear about Aatmabhod?</label>
+                                                         <div class="col-md-12">
+                                                                <label for="inputReferral" class="form-label">How did you hear about Aatmabhod?</label>
 
-            <select name="inputRef" class="form-select">
-                <option selected>Whatsapp</option>
-                <option value="1">Email</option>
-                <option value="2">WhatsApp</option>
-                <option value="3">Referral</option>
-                <option value="4">Facebook</option>
-                <option value="5">Instagram</option>
-                <option value="6">YouTube</option>
-                <option value="7">Linkedln</option>
-                <option value="8">Other</option>
+                                                                <select name="inputRef" class="form-select">
+                                                                      <option selected>Whatsapp</option>
+                                                                      <option value="1">Email</option>
+                                                                      <option value="2">WhatsApp</option>
+                                                                      <option value="3">Referral</option>
+                                                                      <option value="4">Facebook</option>
+                                                                      <option value="5">Instagram</option>
+                                                                      <option value="6">YouTube</option>
+                                                                      <option value="7">Linkedln</option>
+                                                                      <option value="8">Other</option>
                 
-             </select>
-          </div>
+                                                                </select>
+                                                         </div>
 
 
 
            
-           <div class="text-center">
-               <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
-          </div>
-          </form>
+                                                          <div class="text-center">
+                                                                <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
+                                                          </div>
+                                                  </form>
 
-             </div>
-
-
-
+                                                </div>
+                                            
 
 
 
 
 
-      <div class="flip-card-back">
 
-      	     <form action="vitvalidation.php" method="POST" id="form" class="row g-3">
-              <h4>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</h4>
 
-              <h5 style="">Volunteer Application Form for <span style="color: #d4322b;">VITian Students</span>.</h5>
-              <div class="text-center">
-                <h5 style="text-align: center;"> Non-VITian student?</h5>
-                <button type="button" class="btn btn-secondary btn-sm" onclick="flip1()">CLICK HERE</button> 
-               </div>
 
-       	     <div class="col-12">
-                 <label for="inputName" class="form-label">Name</label>
-                 <input type="text" class="form-control" name="inputName" placeholder="Shraddha Navnath Kanase" required>
-            </div> 
+                                            <div class="flip-card-back">
 
-            <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" name="inputEmail4" placeholder="shraddha.kanase19@vit.edu" required>
-            </div>
+                                                    <form action="vitvalidation.php" method="POST" myForm="text-center" id="form" class="row g-3">
+                                                        <h4>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</h4>
 
-            <div class="col-md-6">
-                  <label for="inputPhone" class="form-label">WhatsApp Number</label>
-                  <input type="Phone" class="form-control" name="inputPhone" placeholder="1234567890" required>
-            </div>
+                                                        <h5 >Volunteer Application Form for <span style="color: #d4322b;">VITian Students</span>.</h5>
+                                                        <div class="text-center">
+                                                            <h5 style="text-align: center;"> Non-VITian student?</h5>
+                                                            <button type="button" class="btn btn-secondary btn-sm" onclick="flip1()">CLICK HERE</button> 
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <label for="inputName" class="form-label">Name</label>
+                                                            <input type="text" class="form-control" name="inputName" placeholder="Shraddha Navnath Kanase" required>
+                                                        </div> 
+
+                                                        <div class="col-md-6">
+                                                            <label for="inputEmail4" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" name="inputEmail4" placeholder="shraddha.kanase19@vit.edu" required>
+                                                        </div>
+
+                                                         <div class="col-md-6">
+                                                              <label for="inputPhone" class="form-label">WhatsApp Number</label>
+                                                              <input type="Phone" class="form-control" name="inputPhone" placeholder="1234567890" required>
+                                                         </div>
 
            
 
-            <div class="col-12">
-                 <label for="inputAddress" class="form-label">Address</label>
-                 <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St">
-            </div>
+                                                         <div class="col-12">
+                                                              <label for="inputAddress" class="form-label">Address</label>
+                                                              <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St">
+                                                         </div>
 
 
             
 
 
-              <div class="col-md-6">
-                <label for="inputYear" class="form-label">Academic Year</label>
+                                                          <div class="col-md-6">
+                                                              <label for="inputYear" class="form-label">Academic Year</label>
                
 
-            <select name="inputYear" class="form-select">
-                <option selected value="1">1 st year</option>
+                                                              <select name="inputYear" class="form-select">
+                                                                    <option selected value="1">1 st year</option>
                 
-                <option value="2">2nd  year</option>
-                <option value="3">3rd  year</option>
-                <option value="4">4th  year</option>
-             </select>
-          </div>
+                                                                    <option value="2">2nd  year</option>
+                                                                    <option value="3">3rd  year</option>
+                                                                    <option value="4">4th  year</option>
+                                                              </select>
+                                                          </div>
 
 
-          <div class="col-6">
-                 <label for="inputBranch" class="form-label">Branch</label>
-                 <input type="text" class="form-control" name="inputBrach" placeholder="Electronics">
-            </div>
+                                                          <div class="col-md-6">
+                                                              <label for="inputBranch" class="form-label">Branch</label>
+                                                               <input type="text" class="form-control" name="inputBrach" placeholder="Electronics">
+                                                          </div>
 
 
-            <div class="col-12">
-                 <label for="inputdivision" class="form-label">Division</label>
-                 <input type="text" class="form-control" name="inputdivision" placeholder="A">
-            </div>
+                                                           <div class="col-12">
+                                                                <label for="inputdivision" class="form-label">Division</label>
+                                                                <input type="text" class="form-control" name="inputdivision" placeholder="A">
+                                                           </div>
 
-            <div class="col-6">
-                 <label for="inputgrno" class="form-label">GR.No.</label>
-                 <input type="text" class="form-control" name="inputgrno" placeholder="11919456">
-            </div>
+                                                           <div class="col-md-6">
+                                                                 <label for="inputgrno" class="form-label">GR.No.</label>
+                                                                 <input type="text" class="form-control" name="inputgrno" placeholder="11919456">
+                                                           </div>
 
-            <div class="col-6">
-                 <label for="inputrollno" class="form-label">Roll.No</label>
-                 <input type="text" class="form-control" name="inputrollno" placeholder="23">
-            </div>
+                                                           <div class="col-md-6">
+                                                                 <label for="inputrollno" class="form-label">Roll.No</label>
+                                                                 <input type="text" class="form-control" name="inputrollno" placeholder="23">
+                                                          </div>
 
 
 
           
 
 
-           <div class="text-center">
-               <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
-          </div>
-          </form>
+                                                           <div class="text-center">
+                                                                 <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
+                                                          </div>
+                                                    </form>
 
 
-      </div>
+                                            </div>
+                                          </div> 
 
-  </div>
+                                      </div>
 
- </div> 
+                                </div> 
 
-</div>
+                      </div>
+                   </div>
+            
 
 
 
 
-<div class="container">
+
+<!-- participants Application Form -->
+                
+                  <div class="container">
       
-       <div class="row">
-          <div class="col-md-6">
-             <div class="g-col-6">
+                      <div class="row temp-row">
+                           
+                           <div class="col-md-6">
+                              
+                                <div class="flip-card" >
+                                  <div class="flip-card-inner" id="form3">
+                                    <div class="flip-card-front">
 
-              <form action="participation.php" method="POST" id="form2" class="row g-3">
-              <!-- <h3>Interested in Volunteering?</h3> -->
+                                   <form action="participation.php" method="POST" myForm="text-center" id="form2" class="row g-3">
+                                      <!-- <h3>Interested in Volunteering?</h3> -->
              
 
-              <h5 >Participants Application Form</h4>
+                                       <h5 >Participants Application Form</h5>
+                                       <div class="text-center">
+                                                            <h5 style="text-align: center;">मराठी साठी  </h5>
+                                                            <button type="button" class="btn btn-secondary btn-sm" onclick="flip2()">CLICK HERE</button> 
+                                                        </div>
+
+
+                                     <!--   <h5>मराठी साठी</h5> -->
            
 
-              <div class="col-12">
-                 <label for="inputName" class="form-label"> Full Name</label>
-                 <input type="text" class="form-control" name="inputNameP" placeholder="Type Your Full Name" required>
-            </div> 
+                                       <div class="col-12">
+                                            <label for="inputName" class="form-label"> Full Name</label>
+                                            <input type="text" class="form-control" name="inputNameP" placeholder="Type Your Full Name" required>
+                                      </div> 
 
          
 
-            <div class="col-md-12">
-                  <label for="inputPhone" class="form-label">WhatsApp Number</label>
-                  <input type="Phone" class="form-control" name="inputPhoneP" placeholder="Your Phone Number" required>
-            </div>
+                                       <div class="col-md-12">
+                                            <label for="inputPhone" class="form-label">WhatsApp Number</label>
+                                            <input type="Phone" class="form-control" name="inputPhoneP" placeholder="Your Phone Number" required>
+                                      </div>
 
            
 
-            <div class="col-12">
-                 <label for="inputAddress" class="form-label">Address</label>
-                 <input type="text" class="form-control" name="inputAddressP" placeholder="1234 Main St" required>
-            </div>
+                                       <div class="col-12">
+                                           <label for="inputAddress" class="form-label">Address</label>
+                                           <input type="text" class="form-control" name="inputAddressP" placeholder="1234 Main St" required>
+                                       </div>
 
 
          
 
 
-            <div class="col-md-6">
-               <label for="inputState" class="form-label">State</label>
-               <input type="text" class="form-control" name="inputStateP">
-            </div>
+                                       <div class="col-md-6">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <input type="text" class="form-control" name="inputStateP">
+                                       </div>
 
 
             
                
 
 
-           <div class="col-md-6">
-               <label for="inputCity" class="form-label">City</label>
-               <input type="text" class="form-control" name="inputCityP">
-           </div>
+                                        <div class="col-md-6">
+                                             <label for="inputCity" class="form-label">City</label>
+                                             <input type="text" class="form-control" name="inputCityP">
+                                        </div>
+ 
+
+                                         <div class="col-12">
+                                              <label for="inputVName" class="form-label">Volunteer Name</label>
+                                              <input type="text" class="form-control" name="inputVNameP" placeholder="Type Volunteer Name">
+                                         </div> 
 
 
-              <div class="col-12">
-                 <label for="inputVName" class="form-label">Volunteer Name</label>
-                 <input type="text" class="form-control" name="inputVNameP" placeholder="Type Volunteer Name">
-            </div> 
 
 
 
-
-
-           <div class="text-center">
-               <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
-          </div>
-          </form>
+                                          <div class="text-center">
+                                              <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
+                                          </div>
+                                   </form>
            
               
                     
-      </div>
-    </div>
+                                </div>
+
+
+                                <div class="flip-card-back">
+
+                                   <form action="participation.php" method="POST" myForm="text-center" id="form2" class="row g-3">
+                                      <!-- <h3>Interested in Volunteering?</h3> -->
+             
+
+                                       <h5 >Participants Application Form</h5>
+                                       <div class="text-center">
+                                                            <h5 style="text-align: center;">For English </h5>
+                                                            <button type="button" class="btn btn-secondary btn-sm" onclick="flip3()">CLICK HERE</button> 
+                                                        </div>
+
+                                      <!--  <h5>मराठी साठी</h5> -->
+           
+
+                                       <div class="col-12">
+                                            <label for="inputName" class="form-label"> Full Name</label>
+                                            <input type="text" class="form-control" name="inputNameP" placeholder="Type Your Full Name" required>
+                                      </div> 
+
+         
+
+                                       <div class="col-md-12">
+                                            <label for="inputPhone" class="form-label">WhatsApp Number</label>
+                                            <input type="Phone" class="form-control" name="inputPhoneP" placeholder="Your Phone Number" required>
+                                      </div>
+
+           
+
+                                       <div class="col-12">
+                                           <label for="inputAddress" class="form-label">Address</label>
+                                           <input type="text" class="form-control" name="inputAddressP" placeholder="1234 Main St" required>
+                                       </div>
+
+
+         
+
+
+                                       <div class="col-md-6">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <input type="text" class="form-control" name="inputStateP">
+                                       </div>
+
+
+            
+               
+
+
+                                        <div class="col-md-6">
+                                             <label for="inputCity" class="form-label">City</label>
+                                             <input type="text" class="form-control" name="inputCityP">
+                                        </div>
+ 
+
+                                         <div class="col-12">
+                                              <label for="inputVName" class="form-label">Volunteer Name</label>
+                                              <input type="text" class="form-control" name="inputVNameP" placeholder="Type Volunteer Name">
+                                         </div> 
+
+
+
+
+
+                                          <div class="text-center">
+                                              <button type="submit" class="btn btn-secondary btn-lg">SUBMIT</button>
+                                          </div>
+                                   </form>
+           
+              
+                    
+                                </div>
+
+
+                            </div>
+                          </div>
+                       
+                      </div>
 
            
 
             
-     <div class="col-md-6"> 
-      <div class="image2">
-        <img src="../img/i3.jpg" class="img-fluid" alt="image2">
-      </div>
-      <div class="card-body">
-                      <p class="text-center text-uppercase" style="font-size: 5vw; padding-left: 2vw;"><b>questions?</b>
-                    </p>
+                            <div class="col-md-6"> 
+                                   <div class="image2">
+                                       <img src="../img/i3.jpg" class="img-fluid" alt="image2">
+                                   </div>
+                                   <div class="card-body">
+                                             <p class="text-center text-uppercase" style="font-size: 5vw; "><b>questions?</b>
+                                             </p>
                     
-                    <p class="text-center" style="font-size: 1.2vw; padding-left: 2vw;">
+                                             <p class="text-center" style="font-size: 15px; ">
                     
-                      <span><b>E-mail us at <span style="color: #d4322b;">vitswd@vit.edu</span></b></span><br>
-                      <span><b>or Contact us: <span style="color: #d4322b;">8855976253/9423083424</span></b></span> 
+                                                    <span><b>E-mail us at <span style="color: #d4322b;">vitswd@vit.edu</span></b></span><br>
+                                                    <span><b>or Contact us: <span style="color: #d4322b;">8855976253/9423083424</span></b></span> 
                      
-                    </p>
+                                            </p>
                   
                  
-                </div>
+                                   </div>
  
 
-     </div>
+                            </div>
 
-   </div>
+
+                        </div>
+                   </div>
+
+
+
+<!-- Counter -->
+
+
+<div class="wrapper">
+  <!-- <div class="title">Success in numbers</div> -->
+  <h3 class=title style= "color: #d4322b; text-align: center; "><b>Success in numbers</b></h1>
+  
+</div>
+
+<div class="counter-up">
+  
+  <div class="content">
+
+
+    <div class="box">
+      <div class="counter">724</div>
+      <div class="tex">Working Hours</div>
+    </div>
+
+    <div class="box">
+      <div class="counter">2345</div>
+      <div class="tex">Volunteers</div>
+    </div>
+
+
+    <div class="box">
+      <div class="counter">13</div>
+      <div class="tex">Activities</div>
+    </div>
+    
+
+    <!-- <div class="box">
+      <div class="counter">13</div>
+      <div class="tex">Activities</div>
+    </div> -->
+  </div>
+  
 </div>
 
 
 
 
+<!-- testimonial -->
+
+
+
+
+    <div class="testimonials-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Testimonials </h2>
+                <p class="text-center">Aatmabodh, an initiative by the social welfare and development committee to spread the knowledge of digital literacy among underprivileged, especially senior citizens and women. Started right from teaching people by physically visiting their house, moving on to digitally teaching in computer labs, and further with the amidst of pandemic, the event continued with the same excitement and enthusiasm in online mode with teaching initiative right from their home place.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/1.jpg">
+                        <h5 class="name">Ben Johnson</h5>
+                        <p class="title">CEO of Company Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/3.jpg">
+                        <h5 class="name">Carl Kent</h5>
+                        <p class="title">Founder of Style Co.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="assets/img/2.jpg">
+                        <h5 class="name">Emily Clark</h5>
+                        <p class="title">Owner of Creative Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+   <script type="../js/app.js"></script>
+
 
 
    <script type="text/javascript">
-          	function flip(){
-          		document.getElementById("form1").style.
-          		   transform='rotateY(180deg)';
-          	}
+            function flip(){
+              document.getElementById("form1").style.
+                 transform='rotateY(180deg)';
+            }
 
-          	function flip1(){
-          		document.getElementById("form1").style.
-          		   transform='rotateY(0deg)';
-          	}
+            function flip1(){
+              document.getElementById("form1").style.
+                 transform='rotateY(0deg)';
+            }
+
+            function flip2(){
+              document.getElementById("form3").style.
+                 transform='rotateY(180deg)';
+            }
+
+            function flip3(){
+              document.getElementById("form3").style.
+                 transform='rotateY(0deg)';
+            }
           </script>
 
 
 
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
+     <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
+     
   </body>
 </html>
