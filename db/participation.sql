@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2021 at 02:19 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.7
+-- Generation Time: Aug 30, 2021 at 03:09 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,16 +38,6 @@ CREATE TABLE `participation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `participation`
---
-
-INSERT INTO `participation` (`id`, `inputNameP`, `inputPhoneP`, `inputAddressP`, `inputStateP`, `inputCityP`, `inputVNameP`) VALUES
-(3, 'Khushboo Mundada', '09423083424', '119, Nana Peth, Pune', 'Maharashtra', 'Pune', 'kkk'),
-(4, 'Khushboo', '9423083424', '119, Nana Peth, Pune', 'Maharashtra', 'Pune', 'Khushboo'),
-(5, 'Khushboo', '8855986253', '119, Nana Peth, Pune', 'Maharashtra', 'Pune', 'Khushboo'),
-(6, 'Khushboo', '1111111111', '119, Nana Peth, Pune', 'Maharashtra', 'Pune', 'Khushboo');
-
---
 -- Indexes for dumped tables
 --
 
@@ -65,7 +55,7 @@ ALTER TABLE `participation`
 -- AUTO_INCREMENT for table `participation`
 --
 ALTER TABLE `participation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

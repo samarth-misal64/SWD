@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2021 at 02:20 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.7
+-- Generation Time: Aug 30, 2021 at 03:10 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,27 +28,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `vituser` (
-  `inputName` varchar(255) NOT NULL,
-  `inputEmail4` varchar(255) NOT NULL,
-  `inputPhone` varchar(255) NOT NULL,
-  `inputState` varchar(255) NOT NULL,
-  `inputCity` varchar(255) NOT NULL,
-  `inputYear` varchar(255) NOT NULL,
-  `inputBrach` varchar(255) NOT NULL,
-  `inputdivision` varchar(255) NOT NULL,
-  `inputgrno` varchar(255) NOT NULL,
-  `inputrollno` varchar(255) NOT NULL
+  `id` int(11) NOT NULL,
+  `namevit` varchar(255) NOT NULL,
+  `emailid` varchar(255) NOT NULL,
+  `phone_no` varchar(255) NOT NULL,
+  `addressvit` varchar(255) NOT NULL,
+  `yearvit` varchar(255) NOT NULL,
+  `branch_name` varchar(255) NOT NULL,
+  `division_name` varchar(255) NOT NULL,
+  `grno` varchar(255) NOT NULL,
+  `rollno` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `vituser`
---
-
-INSERT INTO `vituser` (`inputName`, `inputEmail4`, `inputPhone`, `inputState`, `inputCity`, `inputYear`, `inputBrach`, `inputdivision`, `inputgrno`, `inputrollno`) VALUES
-('Khushboo Mundada', 'mu001@gmail.com', '0942083424', 'Maharashtra', 'Pune', '1', 'Computer', 'A', '11910137', '23'),
-('Khushboo Mundada', 'munda2001@gmail.com', '9423083424', 'Maharashtra', 'Pune', '1', 'Computer', 'A', '11910137', '23'),
-('Khushboo Mundada', 'mundadakhush2001@gmail.com', '9423083424', 'Maharashtra', 'Pune', '3', 'Computer', 'A', '11910137', '23'),
-('Khushboo Mundada', 'mundadakhush21@gmail.com', '9423083424', 'Maharashtra', 'Pune', '1', 'Computer', 'A', '11910137', '23');
 
 --
 -- Indexes for dumped tables
@@ -58,7 +48,17 @@ INSERT INTO `vituser` (`inputName`, `inputEmail4`, `inputPhone`, `inputState`, `
 -- Indexes for table `vituser`
 --
 ALTER TABLE `vituser`
-  ADD UNIQUE KEY `inputEmail4` (`inputEmail4`);
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `vituser`
+--
+ALTER TABLE `vituser`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

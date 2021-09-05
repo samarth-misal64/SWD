@@ -232,10 +232,10 @@ else{
 
 
 
-    <title>SWD</title>
+    <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="../css/aatmabodh_reg.css">
-            <link rel="stylesheet" href="../css/main.css" />
-        <noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="../css/main.css" />
+    <noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
     <!-- <link rel=”stylesheet” href=”bootstrap.css”> -->
   </head> 
   <style type="text/css">
@@ -366,21 +366,20 @@ else{
     }
     
     .testimonials-clean .item .box {
+      border: solid 0px;
       padding:30px;
       background-color:#fff;
       position:relative;
     }
     
     .testimonials-clean .item .box:after {
+      border: solid 0px;
       content:'';
       position:absolute;
       left:30px;
       bottom:-24px;
       width:0;
       height:0;
-      border:15px solid transparent;
-      border-width:12px 15px;
-      border-top-color:#fff;
     }
     
     .testimonials-clean .item .author {
@@ -416,25 +415,6 @@ else{
 
 
 <body>
-          <div class="container-fluid">
-        <div class="row" style="padding: 2%;">
-            <div class="col-3" style="line-height: 1.2vw;">
-                <a class="text-end" href="../homepage.html" style="font-size: 2vw; text-decoration: none;">
-                        <span style="margin-top: 100%; "><b style="color: #234d20;">SW&D</b></span><br>
-                  
-                    
-                </a>
-            </div>
-            <div class="col-7" style="line-height: 1.2vw;">
-
-            </div>
-            <div class="col-2 justify-content-center">
-                <img src="../img/logo-vit-1.png" align="center" class="rounded mx-auto d-block" alt="..." style="width: 100%;
-                max-width: 40px;
-            height: auto;">
-            </div>
-        </div>
-    </div>
   <!-- Image -->
                       <div class="card mb-3">
                            <img class="card-img-top" src="../img/slider.jpg" alt="Card image cap">
@@ -499,11 +479,11 @@ else{
                                                 <div class="flip-card-front">
 
                                                   <form method="POST" myForm="text-center" id="form" class="row g-3">
-                                                        <h3>Volunteer Application Form for <span style="color: #d4322b;">Non-VITian Students</span>.</h3>
-                                                        <h4>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</h4>
+                                                        <h3><b>Volunteer Application Form for <span style="color: #d4322b;">Non-VITian Students</span>.</b></h3>
+                                                        <h4><b>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</b></h4>
               
                                                         <div class="text-center">
-                                                              <h5 style="text-align: center;"> VIT student?</h5>
+                                                              <h4 style="text-align: center;"><b>VIT Student?</b></h4>
                                                               <button type="button" class="button small" onclick="flip()">CLICK HERE</button>
                                                         </div>
 
@@ -589,11 +569,11 @@ else{
                                             <div class="flip-card-back">
 
                                                     <form method="post" myForm="text-center" id="form" class="row g-3">
-                                                        <h3>Volunteer Application Form for <span style="color: #d4322b;">VITian Students</span>.</h3>
-                                                        <h4>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</h4>
+                                                        <h3><b>Volunteer Application Form for <span style="color: #d4322b;">VITian Students</span>.</b></h3>
+                                                        <h4><b>Spend Your Free Time Giving Back <br>The <span style="color: #d4322b;">Perfect</span> Volunteering Opportunity</b></h4>
 
                                                         <div class="text-center">
-                                                            <h5 style="text-align: center;"> Non-VITian student?</h5>
+                                                            <h4 style="text-align: center;"><b>Non-VITian student?</b></h4>
                                                             <button type="button" class="button small" onclick="flip1()">CLICK HERE</button> 
                                                         </div>
 
@@ -694,9 +674,9 @@ else{
                                       <!-- <h3>Interested in Volunteering?</h3> -->
              
 
-                                       <h2>Participants Application Form</h2>
+                                       <h2><b>Participants Application Form</b></h2>
                                        <div class="text-center">
-                                                            <h5 style="text-align: center;">मराठी साठी</h5>
+                                                            <h4 style="text-align: center;"><b>मराठी साठी</b></h4>
                                                             <button type="button" class="button small" onclick="flip2()">इथे क्लिक करा</button> 
                                                         </div>
 
@@ -747,9 +727,9 @@ else{
                                       <!-- <h3>Interested in Volunteering?</h3> -->
              
 
-                                       <h2>सहभागी अर्ज</h2>
+                                       <h2><b>सहभागी अर्ज</b></h2>
                                        <div class="text-center">
-                                                            <h5 style="text-align: center;">For English</h5>
+                                                            <h4 style="text-align: center;"><b>For English</b></h4>
                                                             <button type="button" class="button small" onclick="flip3()">CLICK HERE</button> 
                                                         </div>
 
@@ -817,33 +797,31 @@ else{
                             </div>
                         </div>
                    </div>
-<br>
-<br>
-<br>
-<br>
 <!-- Counter -->
-  <section class="wrapper style1 align-center">
-            <div class="inner">
-              <h2>Previous Stat</h2>
-              <p>Aatmabodh, an initiative by the social welfare and development committee to spread the knowledge of digital literacy among underprivileged, especially senior citizens and women. Started right from teaching people by physically visiting their house, moving on to digitally teaching in computer labs, and further with the amidst of pandemic, the event continued with the same excitement and enthusiasm in online mode with teaching initiative right from their home place.</p>
-            </div>
+
+  <section class="wrapper style1 align-center" style="margin-top: 0; background-color: #d4322b; opacity: 0.8;">
+    <div class="inner">
+      <h2><b style="color: white;">Previous Stat</b></h2>
+      <p style="color: white;">Aatmabodh, an initiative by the social welfare and development committee to spread the knowledge of digital literacy among underprivileged, especially senior citizens and women. Started right from teaching people by physically visiting their house, moving on to digitally teaching in computer labs, and further with the amidst of pandemic, the event continued with the same excitement and enthusiasm in online mode with teaching initiative right from their home place.</p>
+    </div>
   </section>
+
   <div class="counter-up" > 
     <div class="contentc">
       <div class="boxc">
-        <div class="iconc"><i class="fas fa-history"></i></div>
+        <div class="iconc"><i class="fas fa-users"></i></div>
         <div class="counter">724</div>
-        <div class="textc">Working Hours</div>
+        <div class="textc">Participants</div>
       </div>
       <div class="boxc">
-        <div class="iconc"><i class="fas fa-gift"></i></div>
-        <div class="counter">508</div>
-        <div class="textc">Completed Projects</div>
+        <div class="iconc"><i class="fas fa-history"></i></div>
+        <div class="counter">30</div>
+        <div class="textc">Edition</div>
       </div>
       <div class="boxc">
         <div class="iconc"><i class="fas fa-users"></i></div>
         <div class="counter">436</div>
-        <div class="textc">Happy Clients</div>
+        <div class="textc">Volunteers</div>
       </div>
 
     </div>
@@ -860,31 +838,31 @@ else{
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">I never thought of learning how to use smartphones as it looked complicated. The volunteers made it an easy to learn experience for me.</p>
+                        <p class="description">आत्मबोध मुळे आयुष्य सोपे झाले. घरी बसुन अनेक तांत्रिक बाबी कळाल्या, Gpay मुळे घरी बसुन कोणालाही पैसे पाठवता येतात हे कळालं. आत्मबोध चे मनापासुन आभार मानते.</p>
                     </div>
                     <div class="author">
-                        <h5 class="name">Vijaya Velhal</h5>
-                        <p class="titlet">(Participant)</p>
+                        <h5 class="name">- मनीषा गोखले</h5>
+                        <p class="titlet">Ex-Participant</p>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">सीखने की कोई उम्र नहीं होती! मैंने इन १० दिनों में ना केवल मोबाइल सीखा बल्कि इसके अलावा भी बहोत कुछ पाया | आज मैं मोबाइल से पत्र व्यवहार कर सकता हूॅं, यह मेरी उपलब्धि है |</p>
+                        <p class="description">Aatmabodh has been a interactive and fun session for me. It is a great social cause & I am proud that I was able to work for a organization that helps the elderly.</p>
                     </div>
                     <div class="author">
-                        <h5 class="name">श्री करंदीकर </h5>
-                        <p class="titlet">( Ex- Participant)</p>
+                        <h5 class="name">- Neel Gokhale</h5>
+                        <p class="titlet">Ex-Volunteer</p>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">As a volunteer, I found working with the team a great experience, interacted with a lot of participants and loved helping them out.</p>
+                        <p class="description">सीखने की कोई उम्र नहीं होती! मैंने इन १० दिनों में ना केवल मोबाइल सीखा बल्कि इसके अलावा भी बहोत कुछ पाया| आज मैं मोबाइल से पत्र व्यवहार कर सकता हूॅं, यह मेरी उपलब्धि है|</p>
                     </div>
                     <div class="author">
-                        <h5 class="name">Anushka Ahire </h5>
-                        <p class="titlet">(ex-best volunteer)</p>
+                        <h5 class="name">- श्री करंदीकर</h5>
+                        <p class="titlet">Ex-Participant</p>
                     </div>
                 </div>
 

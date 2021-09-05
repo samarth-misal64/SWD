@@ -17,8 +17,6 @@ body{
 }
 .img-fluid{
 	border-radius: 10px;
-	
-
 }
 
 .image2{
@@ -158,7 +156,66 @@ body{
 
 }
 
-
+@media (max-width: 748px) and (min-width:482px) {
+	
+  .overlay{
+	  width: 100%;
+	  height: 100%;
+  
+  }
+  
+  .title{
+	  font-size: 7vw;
+  }
+  
+  
+  .temp-row {
+	  position: relative;
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+  }
+  
+  #form2 {
+  
+	  margin-top: 70rem ;
+	  /* overflow: hidden; */
+  }
+  
+  .container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: column;
+	  /* height: 700px; */
+	  /* overflow: hidden; */
+  }
+  .image2{
+	  margin-top: 120rem;
+  }
+  .content .box{
+	  width: 100%;
+	  width: 30px;
+	  align-items: center;
+	  border-width: 100%;
+	  display: flex;
+	  margin-right: 50rem;
+	  
+	  
+  
+  }
+  .counter-up{
+	  padding: 50px 50px 50px 50px;
+  }
+  .wrapper{
+	  padding: 20px;
+	}
+	.counter-up{
+	  padding: 30px 20px 0 20px;
+	}
+  
+  
+  
+  }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
 .overlay{
@@ -356,12 +413,7 @@ p{
 	content:"";
 	/* background: rgba(0, 0, 0, 0.8) */
 } 
- .counter-up .content{
-	
-	
-	
-
-	
+ .counter-up .content{	
 	/* margin-top: 5rem; */
 
 	z-index: 1;
