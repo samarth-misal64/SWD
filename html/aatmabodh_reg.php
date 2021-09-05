@@ -416,6 +416,25 @@ else{
 
 
 <body>
+          <div class="container-fluid">
+        <div class="row" style="padding: 2%;">
+            <div class="col-3" style="line-height: 1.2vw;">
+                <a class="text-end" href="../homepage.html" style="font-size: 2vw; text-decoration: none;">
+                        <span style="margin-top: 100%; "><b style="color: #234d20;">SW&D</b></span><br>
+                  
+                    
+                </a>
+            </div>
+            <div class="col-7" style="line-height: 1.2vw;">
+
+            </div>
+            <div class="col-2 justify-content-center">
+                <img src="../img/logo-vit-1.png" align="center" class="rounded mx-auto d-block" alt="..." style="width: 100%;
+                max-width: 40px;
+            height: auto;">
+            </div>
+        </div>
+    </div>
   <!-- Image -->
                       <div class="card mb-3">
                            <img class="card-img-top" src="../img/slider.jpg" alt="Card image cap">
