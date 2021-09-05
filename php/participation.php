@@ -1,5 +1,5 @@
 <?php
-    session_start();
+error_reporting(0);
 $inputNameP = $_POST['inputNameP'];
 $inputPhoneP = $_POST['inputPhoneP'];
 $inputAddressP = $_POST['inputAddressP'];
@@ -10,9 +10,9 @@ $inputVNameP = $_POST['inputVNameP'];
 if (!empty($inputVNameP) || !empty($inputPhoneP) || !empty($inputAddressP) || !empty($inputStateP) || !empty($inputCityP) || !empty($inputVNameP)){
 
     $host = "localhost";
-    $dbUsername = "epiz_29608211";
-    $dbPassword = "vs0H5sWYwnS4CK8";
-    $dbname = "epiz_29608211_registration";
+    $dbUsername = "root";
+    $dbPassword = "";
+    $dbname = "registration";
 
     //Create conn
 
@@ -22,6 +22,10 @@ if (!empty($inputVNameP) || !empty($inputPhoneP) || !empty($inputAddressP) || !e
 
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
 
+    }elseif (strlen($inputPhoneP) < 10) {
+        $phone_error = "Phone number requires 10 digits";
+    }elseif (strlen($inputPhoneP) > 10) {
+        $phone_error = "Phone number requires 10 digits";
     }else{
 
         $SELECT = "SELECT inputPhoneP FROM `participation` WHERE inputPhoneP = ? LIMIT 1";
@@ -60,5 +64,7 @@ if (!empty($inputVNameP) || !empty($inputPhoneP) || !empty($inputAddressP) || !e
     echo "All fields are required";
     die();
 }
+// header('location: '); 
+include('../html/aatmabodh_reg.html');
 
 ?>

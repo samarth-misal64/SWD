@@ -1,16 +1,17 @@
 <?php
 error_reporting(0);
-$namevit = $_POST['namevit'];
-$emailid = $_POST['emailid'];
-$phone_no = $_POST['phone_no'];
-$addressvit = $_POST['addressvit'];
-$yearvit = $_POST['yearvit'];
-$branch_name = $_POST['branch_name'];
-$division_name = $_POST['division_name'];
-$grno = $_POST['grno'];
-$rollno = $_POST['rollno'];
+$inputName = $_POST['inputName'];
+$inputEmail4 = $_POST['inputEmail4'];
+$inputPhone = $_POST['inputPhone'];
+$inputState = $_POST['inputState'];
+$inputCity = $_POST['inputCity'];
+$inputYear = $_POST['inputYear'];
+$inputBrach = $_POST['inputBrach'];
+$inputdivision = $_POST['inputdivision'];
+$inputgrno = $_POST['inputgrno'];
+$inputrollno = $_POST['inputrollno'];
 
-if (!empty($namevit) || !empty($emailid) || !empty($phone_no) || !empty($addressvit) || !empty($yearvit) || !empty($branch_name) || !empty($division_name) || !empty($grno) || !empty($rollno)){
+if (!empty($inputName) || !empty($inputEmail4) || !empty($inputPhone) || !empty($inputState) || !empty($inputCity)|| !empty($inputYear) || !empty($inputBrach) || !empty($inputdivision) || !empty($inputgrno) || !empty($inputrollno)){
 
     $host = "localhost";
     $dbUsername = "root";
@@ -25,17 +26,20 @@ if (!empty($namevit) || !empty($emailid) || !empty($phone_no) || !empty($address
 
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
 
+    }elseif (strlen($inputPhone) < 10) {
+        $phone_error = "Phone number requires 10 digits";
+    }elseif (strlen($inputPhone) > 10) {
+        $phone_error = "Phone number requires 10 digits";
     }else{
-
-        $SELECT = "SELECT emailid FROM `vituser` WHERE emailid = ? LIMIT 1";
-        $INSERT = "INSERT Into `vituser` (namevit, emailid, phone_no, addressvit, yearvit, branch_name, division_name, grno, rollno) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $SELECT = "SELECT inputEmail4 FROM `vituser` WHERE inputEmail4 = ? LIMIT 1";
+        $INSERT = "INSERT Into `vituser` (inputName, inputEmail4, inputPhone, inputState, inputCity, inputYear, inputBrach, inputdivision, inputgrno, inputrollno) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         //Prepare statement
 
         $stmt = $conn->prepare($SELECT);
-        $stmt->bind_param("s", $emailid);
+        $stmt->bind_param("s", $inputEmail4);
         $stmt->execute();
-        $stmt->bind_result($emailid);
+        $stmt->bind_result($inputEmail4);
         $stmt->store_result();
         $rnum = $stmt->num_rows;
 
@@ -44,13 +48,13 @@ if (!empty($namevit) || !empty($emailid) || !empty($phone_no) || !empty($address
             $stmt->close();
 
             $stmt = $conn->prepare($INSERT);
-            $stmt->bind_param("sssssssss" ,$namevit, $emailid, $phone_no, $addressvit, $yearvit, $branch_name, $division_name, $grno, $rollno);
+            $stmt->bind_param("ssssssssss" ,$inputName, $inputEmail4, $inputPhone, $inputState, $inputCity, $inputYear, $inputBrach, $inputdivision, $inputgrno, $inputrollno);
             $stmt->execute();
-            echo "New record inserted successfully";
+            alert("Added Succesfully!");
 
         }else{
 
-            echo "Someone already registered using this email";
+            alert("Someone already registered using this email");
 
         }
 
@@ -60,8 +64,8 @@ if (!empty($namevit) || !empty($emailid) || !empty($phone_no) || !empty($address
     }
 
 }else{
-    echo "All fields are required";
+    alert("All fields are required");
     die();
 }
-
+header('Location: ../html/aatmabodh_reg.php');
 ?>
