@@ -233,9 +233,10 @@ else{
 
 
     <title>SWD</title>
-    <link rel="stylesheet" type="text/css" href="../css/aatmabodh_reg.css">
-            <link rel="stylesheet" href="../css/main.css" />
-        <noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/aatmabodh_reg.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+        <!-- <noscript><link rel="stylesheet" href="../css/noscript.css" /></noscript> -->
     <!-- <link rel=”stylesheet” href=”bootstrap.css”> -->
   </head> 
   <style type="text/css">
@@ -504,7 +505,7 @@ else{
               
                                                         <div class="text-center">
                                                               <h5 style="text-align: center;"> VIT student?</h5>
-                                                              <button type="button" class="button small" onclick="flip()">CLICK HERE</button>
+                                                              <button type="button" class="btn btn-secondary " onclick="flip()">CLICK HERE</button>
                                                         </div>
 
 
@@ -580,7 +581,7 @@ else{
 
            
                                                           <div class="text-center">
-                                                                <button type="submit" name="nonvitsubmit" class="button">SUBMIT</button>
+                                                                <button type="submit" name="nonvitsubmit" class="btn btn-secondary ">SUBMIT</button>
                                                           </div>
                                                   </form>
 
@@ -594,7 +595,7 @@ else{
 
                                                         <div class="text-center">
                                                             <h5 style="text-align: center;"> Non-VITian student?</h5>
-                                                            <button type="button" class="button small" onclick="flip1()">CLICK HERE</button> 
+                                                            <button type="button" class="btn btn-secondary " onclick="flip1()">CLICK HERE</button> 
                                                         </div>
 
                                                         <div class="col-12">
@@ -658,7 +659,7 @@ else{
                                                                  <input type="text" class="form-control" name="inputrollno" placeholder="23">
                                                           </div>
                                                            <div class="text-center">
-                                                                 <button type="submit" name="vitsubmit" class="button">SUBMIT</button>
+                                                                 <button type="submit" name="vitsubmit" class="btn btn-secondary " >SUBMIT</button>
                                                           </div>
                                                     </form>
 
@@ -697,7 +698,7 @@ else{
                                        <h2>Participants Application Form</h2>
                                        <div class="text-center">
                                                             <h5 style="text-align: center;">मराठी साठी</h5>
-                                                            <button type="button" class="button small" onclick="flip2()">इथे क्लिक करा</button> 
+                                                            <button type="button" class="btn btn-secondary" onclick="flip2()">इथे क्लिक करा</button> 
                                                         </div>
 
 
@@ -737,7 +738,7 @@ else{
                                               <input type="text" class="form-control" name="inputVNameP" placeholder="Type Volunteer Name">
                                          </div> 
                                           <div class="text-center">
-                                              <button type="submit" name="participantsubmit" class="button">SUBMIT</button>
+                                              <button type="submit" name="participantsubmit" class="btn btn-secondary">SUBMIT</button>
                                           </div>
                                    </form>
                                 </div>
@@ -750,7 +751,7 @@ else{
                                        <h2>सहभागी अर्ज</h2>
                                        <div class="text-center">
                                                             <h5 style="text-align: center;">For English</h5>
-                                                            <button type="button" class="button small" onclick="flip3()">CLICK HERE</button> 
+                                                            <button type="button" class="btn btn-secondary" onclick="flip3()">CLICK HERE</button> 
                                                         </div>
 
                                       <!--  <h5>मराठी साठी</h5> -->
@@ -793,7 +794,7 @@ else{
                                          </div> 
 
                                           <div class="text-center">
-                                              <button type="submit" name="participantsubmit" class="button">फॉर्म सबमिट करण्यासाठी येथे क्लिक करा</button>
+                                              <button type="submit" name="participantsubmit" class="btn btn-secondary ">फॉर्म सबमिट करण्यासाठी येथे क्लिक करा</button>
                                           </div>
                                    </form>
                                 </div>
@@ -891,11 +892,13 @@ else{
             </div>
         </div>
     </div>
-              <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+
+
+        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
             <div class="content">
               <h2>Online Aatmabodh Syllabus</h2>
               <ul class="actions stacked">
-                <li><a href="https://drive.google.com/file/d/14yk8v-JdvrfJp1Y0SYIcoTbRBUm6DTvi/view?usp=sharing" target="_blank" class="button">Check Here</a></li>
+                <li><a href="https://drive.google.com/file/d/14yk8v-JdvrfJp1Y0SYIcoTbRBUm6DTvi/view?usp=sharing" class="btn btn-primary" style="list-style-type: none;"target="_blank" class="button">Check Here</a></li>
               </ul>
             </div>
             <div class="image">
