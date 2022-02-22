@@ -310,7 +310,7 @@ function gallery() {
       canvas.innerHTML =
         `
       <div class="rowcoord row1">
-      <div class="colcoord  ele0" id="photo1"  style="transform: translateX(-25%) translateY(0); z-index:1;">
+      <div class="colcoord  ele0" id="photo1"  style="transform: translateX(-10%) translateY(0); z-index:1;">
             <div class="image">
             <img  class="image__img animate__animated" style="background-color: ${generateRandomColor()};" onmouseover="imageHover(ele0)" src="${photoList[i]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('1')"  >
@@ -319,7 +319,7 @@ function gallery() {
                 </div>
                 </div>
           </div>
-          <div class="colcoord  ele1" id="photo3" style="transform: translateX(-25%) translateY(0); z-index:3;">
+          <div class="colcoord  ele1" id="photo3" style="transform: translateX(-10%) translateY(0); z-index:3;">
           <div class="image">
               <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 1]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('3')" >
@@ -328,7 +328,7 @@ function gallery() {
               </div>
               </div>
           </div>
-          <div class="colcoord  ele2" id="photo5"  style="transform: translateX(-25%) translateY(0); z-index:5;">
+          <div class="colcoord  ele2" id="photo5"  style="transform: translateX(-10%) translateY(0); z-index:5;">
           <div class="image">
               <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 2]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('5')" >
@@ -337,7 +337,7 @@ function gallery() {
                 </div>
             </div>
             </div>
-          <div class="colcoord  ele3" id="photo7" style="transform: translateX(-25%) translateY(0); z-index:7;">
+          <div class="colcoord  ele3" id="photo7" style="transform: translateX(-10%) translateY(0); z-index:7;">
             <div class="image">
             <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 3]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('7')" >
@@ -348,7 +348,7 @@ function gallery() {
             </div>
         </div>
         <div class="rowcoord row2">
-          <div class="colcoord  ele4" id="photo2" style="transform: translateX(10%) translateY(-25%); z-index:2;">
+          <div class="colcoord  ele4" id="photo2" style="transform: translateX(20%) translateY(-25%); z-index:2;">
             <div class="image">
             <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 4]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('2')" >
@@ -357,7 +357,7 @@ function gallery() {
               </div>
             </div>
           </div>
-          <div class="colcoord  ele5" id="photo4" style="transform: translateX(10%) translateY(-25%); z-index:4;">
+          <div class="colcoord  ele5" id="photo4" style="transform: translateX(20%) translateY(-25%); z-index:4;">
           <div class="image">
           <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 5]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('4')" >
@@ -366,7 +366,7 @@ function gallery() {
               </div>
             </div>
             </div>
-          <div class="colcoord  ele6" id="photo6" style="transform: translateX(10%) translateY(-25%); z-index:6;">
+          <div class="colcoord  ele6" id="photo6" style="transform: translateX(20%) translateY(-25%); z-index:6;">
           <div class="image">
           <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 6]}" alt="Coords" />
               <div class="image__overlay image__overlay--primary"  onclick="imageHover('6')" >
@@ -375,7 +375,7 @@ function gallery() {
                 </div>
             </div>
           </div>
-          <div class="colcoord  ele7" id="photo8" style="transform: translateX(10%) translateY(-25%); z-index:8;">
+          <div class="colcoord  ele7" id="photo8" style="transform: translateX(20%) translateY(-25%); z-index:8;">
           <div class="image">
           <img class="image__img animate__animated" style="background-color: ${generateRandomColor()};" src="${photoList[i + 7]}" alt="Coords" />
           <div class="image__overlay image__overlay--primary"  onclick="imageHover('8')" >
@@ -440,7 +440,7 @@ function gallery() {
         i = 0;
       }
     }
-  }, 7000);
+  }, 6500);
 }
 
 gallery()
