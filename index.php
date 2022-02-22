@@ -433,10 +433,10 @@
                 hand towards everyone in society by organizing various events and activities throughout the year. Main
                 strength of our committee lies in equality and unity amongst every member. We are always ready to do
                 someone a good turn to be good for society with no expectations in return.</p>
-                <!-- <div class="container-fluid my-4">
-            <a class="button" href="Team/sec.html" role="button"><span
+                <div class="container-fluid my-4">
+            <a class="button" href="team/index.html" role="button"><span
                     style="text-transform: uppercase; font-weight: bold;">Meet the Team</span></a>
-        </div> -->
+        </div>
         </div>
         <div class="image">
             <img src="img/who.png" alt="" />

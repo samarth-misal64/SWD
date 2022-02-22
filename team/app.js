@@ -440,7 +440,7 @@ function gallery() {
         i = 0;
       }
     }
-  }, 10000);
+  }, 7000);
 }
 
 gallery()
