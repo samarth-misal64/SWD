@@ -20,6 +20,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <style type="text/css">
         .card {
             display: inline-block;
@@ -367,145 +372,165 @@
             z-index: 1;
         }
 
-        /* NAV */
-        .burger {
-            display: none;
+        /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+        #footer {
+            background: #234d20;
+            padding: 0 0 25px 0;
+            color: #eee;
+            font-size: 14px;
         }
 
-        .active {
-            color: #234d20;
+        #footer .footer-top {
+            background: #040919;
+            padding: 60px 0 30px 0;
         }
 
-        .burger div {
-            width: 25px;
-            height: 5px;
-            background-color: black;
-            margin: 5px;
-            transition: all 0.3s ease;
+        #footer .footer-top .footer-info {
+            margin-bottom: 30px;
         }
 
-        .footer2 {
-            display: none;
+        #footer .footer-top .footer-info h3 {
+            font-size: 26px;
+            margin: 0 0 20px 0;
+            padding: 2px 0 2px 0;
+            line-height: 1;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            color: #fff;
         }
 
-        .nav-events:hover {
-            font-size: 1.1rem;
-            transform: skew(-2deg) translateX(-5%);
+        #footer .footer-top .footer-info img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        #footer .footer-top .footer-info p {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+            font-family: "Raleway", sans-serif;
+            color: #fff;
+        }
+
+        #footer .footer-top .social-links a {
+            display: inline-block;
+            background: #222636;
+            color: #eee;
+            line-height: 1;
+            margin-right: 4px;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
             transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .fs {
-            font-size: 1.2rem;
+        #footer .footer-top .social-links a i {
+            line-height: 0;
+            font-size: 16px;
         }
 
-        @media screen and (max-width:760px) {
-            body {
-                overflow-x: hidden;
-            }
-
-            .events {
-                font-size: 2vw;
-            }
-
-            .footer2 {
-                display: inline;
-            }
-
-            .navs {
-                position: absolute;
-                right: 0px;
-                left: opx;
-                height: 96vh;
-                top: 50px;
-                background-color: #fdfce9;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                font-size: 5vw;
-                z-index: 3;
-                transition: transform 0.5s ease-in;
-                transform: translateX(100%);
-            }
-
-            .navs li {
-                opacity: 0;
-            }
-
-            .burger {
-                display: block;
-                cursor: pointer;
-            }
-
-            .hidden {
-                overflow: hidden;
-            }
-
-            .nav-events:hover {
-                font-size: 2.2rem;
-                transition: 0.3s;
-            }
-
-
+        #footer .footer-top .social-links a:hover {
+            background: #c9df8a;
+            color: #fff;
         }
 
-        .nav-active {
-            transform: translateX(0%);
+        #footer .footer-top h4 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #c9df8a;
         }
 
-        @keyframes navLinkFade {
-            from {
-                opacity: 0;
-                transform: translateX(50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0px);
-            }
+        #footer .footer-top .footer-links {
+            margin-bottom: 30px;
         }
 
-        .toggle .line1 {
-            transform: rotate(-45deg) translate(-8px, 6px);
-            background-color: #234d20;
+        #footer .footer-top .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .toggle .line2 {
-            opacity: 0;
+        #footer .footer-top .footer-links ul i {
+            padding-right: 5px;
+            color: #c9df8a;
+            font-size: 18px;
         }
 
-        .toggle .line3 {
-            transform: rotate(45deg) translate(-8px, -6px);
-            background-color: #234d20;
+        #footer .footer-top .footer-links ul li {
+            border-bottom: 1px solid #262c44;
+            padding: 10px 0;
         }
 
-        /* Footer */
-        .footer-icon:hover {
-            width: 37%;
+        #footer .footer-top .footer-links ul li:first-child {
+            padding-top: 0;
         }
 
-        .footer2 {
-            display: none;
+        #footer .footer-top .footer-links ul a {
+            color: #eee;
         }
 
-        @media screen and (max-width:760px) {
-            body {
-                overflow-x: hidden;
-            }
-
-            .footer1 {
-                display: none;
-            }
-
-            .footer2 {
-                display: inline;
-            }
-
+        #footer .footer-top .footer-links ul a:hover {
+            color: #c9df8a;
         }
+
+        #footer .footer-top .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        #footer .footer-top .footer-contact p {
+            line-height: 26px;
+        }
+
+        #footer .footer-top .footer-newsletter {
+            margin-bottom: 30px;
+        }
+
+        #footer .footer-top .footer-newsletter input[type=email] {
+            border: 0;
+            padding: 6px 8px;
+            width: 65%;
+        }
+
+        #footer .footer-top .footer-newsletter input[type=submit] {
+            background: #c9df8a;
+            border: 0;
+            width: 35%;
+            padding: 6px 0;
+            text-align: center;
+            color: #fff;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        #footer .footer-top .footer-newsletter input[type=submit]:hover {
+            background: #c9df8a;
+        }
+
+        #footer .copyright {
+            background: #234d20;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        #footer .credits {
+            text-align: center;
+            font-size: 13px;
+            color: #ddd;
+        }
+
     </style>
 </head>
-
-<body oncontextmenu="return false" class="body" style="overflow-y: hidden;">
+<!-- 5D001E -->
+<body class="body" style="overflow-y: hidden;">
 
 <!--     <?php
     // include 'register.php';
@@ -527,62 +552,9 @@ $activity = "select a_name from activity where 1";
 $a_list   = $conn->query($activity);
 
 ?> -->
-    <div class="main-wrapper">
+    <div class="main-wrapper" >
         <div class="site-content-wrapper">
             <div class="site-content" style="overflow-x:hidden;">
-
-                <nav class="navbar navbar-light" style="background-color: #fdfce9">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/swd.png" alt="" width="20" height="auto"
-                                class="d-inline-block align-text-top">
-                            <span class="align-middle"><b id="brandname">Social Welfare & Development</b></span>
-                        </a>
-                        <div class="d-flex">
-                            <ul class="nav navs">
-                                <li class="nav-item">
-                                    <a class="nav-link active nav-events" aria-current="page" href="#"><b>GP2
-                                            Activities</b></a>
-                                    <div class="footer2 events">
-                                        <ul class="nav flex-column" align="center">
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Utkarsh</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Udaan</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Matadhikar</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Sarthi</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Go-Green</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Socio-Tech</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Aavishkar</a></li>
-                                            <li class="nav-item mb-2 nav-events"><a href="#"
-                                                    class="nav-link p-0 text-muted fs">Saksham</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active nav-events" aria-current="page"
-                                        href="../flagship/flagship.html"><b>Flagship</b></a>
-                                </li>
-                               <!--  <li class="nav-item">
-                                    <a class="nav-link active nav-events" aria-current="page" href="#"><b>Our
-                                            Team</b></a>
-                                </li> -->
-                            </ul>
-                            <div class="burger">
-                                <div class="line1"></div>
-                                <div class="line2"></div>
-                                <div class="line3"></div>
-                            </div>
-                            <img src="img/logo-vit-1.png" alt="" width="30" height="auto"
-                                class="d-inline-block align-text-top">
-                        </div>
-                    </div>
-                </nav>
                 <section class="about-meal">
                     <div class="containers">
                         <div class="about-meal-wrap flex">
@@ -1139,249 +1111,82 @@ $a_list   = $conn->query($activity);
                         </div>
                     </div>
                 </section>
+                <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
 
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <img src="img/swdlogo3.png" alt="Logo">
+                        <p>Social Welfare and Development Committee with the motto of "Empowering Society, Transforming Lives" has
+                            been helping society for several years and continues to do so in any circumstance.
+                        </p>
+                    </div>
 
-                <div class="container-fluid"
-                    style="background-color: #fdfce9; border-radius: 25px; text-decoration-color: white; padding-bottom: 0px;">
-                    <footer class="footer1" style="padding-top: 50px; padding-bottom: 0px">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Our Team</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Event Schedule</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Flagship Events</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">GP2 Activities</a></li>
+                        </ul>
+                    </div>
 
-                        <div class="row ">
-                            <div class="col-6" style="width: 40%;" align="center">
-                                <div class="container-fluid">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.442128793462!2d73.86601501484184!3d18.463621887442258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1633011425624!5m2!1sen!2sin"
-                                        height="310px" width="100%" style="border:0; border-radius: 20px;"
-                                        allowfullscreen="" loading="lazy"></iframe>
-                                </div>
-                                <div class="py-5">
-                                    <p>© 2021 Social Welfare & Development committee, VIT Pune.</p>
-                                </div>
-                            </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Flagship</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">AATMABODH</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">REJUVENATING RASHTRA</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">UTKARSH</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">MI ATRE BOLTOY</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">BLOOD-D</a></li>
+                        </ul>
+                    </div>
 
-                            <div class="col-6" align="center" style="width: 60%;">
-                                <div class="container">
-                                    <img src="../img/SWD Youtube2.png" style="max-width: 75px; height: auto;">
-                                </div>
-                                <div class="row " style="padding-top: 20px; padding-left: 5%; padding-right: 5%;">
-                                    <div class="col" align="center">
-                                        <h5>Offline</h5>
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">E
-                                                    recycle</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Liliput</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Mahidoot</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Prayatna</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Vatsalya</a></li>
-                                        </ul>
-                                    </div>
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <b style="color:white">Social Welfare & Development</b><br>
+                            Vishwakarma Institute of Technology<br>
+                            666, Upper Indiranagar, Bibwewadi, <br>
+                            Pune - 411 037 <br>
+                            <strong style="color:white">Phone:</strong> +91 73852 23242 / +91 93253 50665 <br>
+                            <strong style="color:white">Email:</strong> vitswd@vit.edu<br>
+                        </p>
 
-                                    <div class="col" align="center">
-                                        <h5>GP2</h5>
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Udaan</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Matadhikar</a>
-                                            </li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Sarthi</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Socip-tech</a>
-                                            </li>
-                                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Go
-                                                    green</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col" align="center">
-                                        <h5>Flagship</h5>
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Aatmabodh</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Blood-D</a></li>
-                                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mi
-                                                    atrey
-                                                    boltay</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Utkarsh</a></li>
-                                            <li class="nav-item mb-2"><a href="#"
-                                                    class="nav-link p-0 text-muted">Rejuvenating
-                                                    Rashtra</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col" align="center">
-                                        <h5>Sub-Units</h5>
-                                        <ul class="nav flex-column">
-                                            <li class="nav-item mb-2"><a
-                                                    href="https://instagram.com/connecting_nss?utm_medium=copy_link"
-                                                    class="nav-link p-0 text-muted">NSS Camps</a></li>
-                                            <li class="nav-item mb-2"><a
-                                                    href="https://www.instagram.com/vit_official_divaclub/"
-                                                    class="nav-link p-0 text-muted">Diva</a></li>
-                                            <li class="nav-item mb-2"><a
-                                                    href="https://instagram.com/rescue_vitsocials?utm_medium=copy_link"
-                                                    class="nav-link p-0 text-muted">Rescue</a></li>
-                                            <li class="nav-item mb-2"><a
-                                                    href="https://instagram.com/team.eklavya.official?utm_medium=copy_link"
-                                                    class="nav-link p-0 text-muted">Eklavya</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <hr style="height: 3px; background-color: white;">
-                                <div class="d-flex" style="height: 20px;">
-                                    <a href="mailto:vitswd@vit.edu" target="_blank"
-                                        style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                        <img class="footer-icon" width="30%" height="auto"
-                                            src="https://image.flaticon.com/icons/png/512/888/888853.png"
-                                            class="loaded">
-                                    </a>
-                                    <a href="https://www.instagram.com/vitsocials/" target="_blank"
-                                        style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                        <img src="https://image.flaticon.com/icons/png/512/1384/1384063.png"
-                                            class="footer-icon" width="30%" height="auto"
-                                            data-icon_src="https://www.flaticon.com/svg/vstatic/svg/1384/1384063.svg?token=exp=1630352769~hmac=a83516b21388b686df5b454e07ebfd8a">
-                                    </a>
-                                    <a href="https://www.facebook.com/vitsocials" target="_blank"
-                                        style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                        <img class="footer-icon" width="30%" height="auto"
-                                            src="https://image.flaticon.com/icons/png/512/733/733547.png"
-                                            class="loaded">
-                                    </a>
-                                    <a href="https://www.linkedin.com/company/vit-social-welfare-development/"
-                                        target="_blank"
-                                        style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                        <img class="footer-icon" width="30%" height="auto"
-                                            src="https://image.flaticon.com/icons/png/512/174/174857.png"
-                                            class="loaded">
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UCJnaNm8Ns08rUIhsdFM2fhA" target="_blank"
-                                        style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                        <img class="footer-icon" width="30%" height="auto"
-                                            src="https://image.flaticon.com/icons/png/512/1384/1384060.png"
-                                            class="loaded">
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/vit_socials" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://www.facebook.com/vitsocials" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/vitsocials/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCJnaNm8Ns08rUIhsdFM2fhA" target="_blank" class="google-plus"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/vit-social-welfare-development/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
                         </div>
-                    </footer>
-                    <footer class="footer2" style="padding-bottom: 0px">
-                        <div class="col-12" align="center">
-                            <div class="container">
-                                <img src="../img/SWD Youtube2.png" style="max-width: 75px; height: auto;">
-                            </div>
-                            <div class="row " style="padding-top: 20px;">
-                                <div class="col" align="center">
-                                    <h5>Offline</h5>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">E
-                                                recycle</a></li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Liliput</a></li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Mahidoot</a></li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Prayatna</a></li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Vatsalya</a></li>
-                                    </ul>
-                                </div>
 
-                                <div class="col" align="center">
-                                    <h5>GP2</h5>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Udaan</a>
-                                        </li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Matadhikar</a></li>
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sarthi</a>
-                                        </li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Socip-tech</a></li>
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Go
-                                                green</a></li>
-                                    </ul>
-                                </div>
+                    </div>
 
-                                <div class="col" align="center">
-                                    <h5>Flagship</h5>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Aatmabodh</a></li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Blood-D</a></li>
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mi atrey
-                                                boltay</a>
-                                        </li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Utkarsh</a></li>
-                                        <li class="nav-item mb-2"><a href="#"
-                                                class="nav-link p-0 text-muted">Rejuvenating
-                                                Rashtra</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr style="height: 3px; background-color: white;">
-                            <div class="d-flex" style="height: 20px;">
-                                <a href="mailto:vitswd@vit.edu" target="_blank"
-                                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                    <img class="footer-icon" width="30%" height="auto"
-                                        src="https://image.flaticon.com/icons/png/512/888/888853.png" class="loaded">
-                                </a>
-                                <a href="https://www.instagram.com/vitsocials/" target="_blank"
-                                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                    <img src="https://image.flaticon.com/icons/png/512/1384/1384063.png"
-                                        class="footer-icon" width="30%" height="auto"
-                                        data-icon_src="https://www.flaticon.com/svg/vstatic/svg/1384/1384063.svg?token=exp=1630352769~hmac=a83516b21388b686df5b454e07ebfd8a">
-                                </a>
-                                <a href="https://www.facebook.com/vitsocials" target="_blank"
-                                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                    <img class="footer-icon" width="30%" height="auto"
-                                        src="https://image.flaticon.com/icons/png/512/733/733547.png" class="loaded">
-                                </a>
-                                <a href="https://www.linkedin.com/company/vit-social-welfare-development/"
-                                    target="_blank" style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                    <img class="footer-icon" width="30%" height="auto"
-                                        src="https://image.flaticon.com/icons/png/512/174/174857.png" class="loaded">
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCJnaNm8Ns08rUIhsdFM2fhA" target="_blank"
-                                    style="padding-left: 2%; padding-right: 2%; text-decoration: none;">
-                                    <img class="footer-icon" width="30%" height="auto"
-                                        src="https://image.flaticon.com/icons/png/512/1384/1384060.png" class="loaded">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 py-5" align="center">
-                            <div class="container-fluid">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.442128793462!2d73.86601501484184!3d18.463621887442258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea950f616219%3A0x321bdae2cea9f064!2sVishwakarma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1633011425624!5m2!1sen!2sin"
-                                    height="310px" width="100%" style="border:0; border-radius: 20px;"
-                                    allowfullscreen="" loading="lazy"></iframe>
-                            </div>
-                            <div class="py-5">
-                                <p>© 2021 Social Welfare & Development committee, VIT Pune.</p>
-                            </div>
-                        </div>
-                    </footer>
                 </div>
-
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2021-22 Social Welfare & Development Committee, VIT Pune.
+            </div>
+        </div>
+    </footer><!-- End  Footer -->
             </div>
         </div>
     </div>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
     <script type="text/javascript">
         function mousehandler(e) {
@@ -1464,6 +1269,45 @@ $a_list   = $conn->query($activity);
         };
         navSlide();
         navResize();
+    </script>
+    <script>
+           /**
+     * Easy selector helper function
+     */
+    const select = (el, all = false) => {
+      el = el.trim()
+      if (all) {
+        return [...document.querySelectorAll(el)]
+      } else {
+        return document.querySelector(el)
+      }
+    }
+
+    /**
+     * Easy event listener function
+     */
+    const on = (type, el, listener, all = false) => {
+      let selectEl = select(el, all)
+      if (selectEl) {
+        if (all) {
+          selectEl.forEach(e => e.addEventListener(type, listener))
+        } else {
+          selectEl.addEventListener(type, listener)
+        }
+      }
+    }
+
+    /**
+     * Easy on scroll event listener
+     */
+    const onscroll = (el, listener) => {
+      el.addEventListener('scroll', listener)
+    }
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
     </script>
 
 <!--     <?php
