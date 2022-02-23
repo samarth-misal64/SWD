@@ -9,8 +9,7 @@
     <link rel="icon" href="img/SWD Youtube2.png" type="image/x-icon">
     <!-- External CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <!-- Bootstrap CSS -->
@@ -22,6 +21,311 @@
     </noscript>
     <title>VIT SW&D</title>
     <style>
+        /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+        #header {
+            height: 50px;
+            /* position: fixed; */
+            left: 0;
+            top: 0;
+            right: 0;
+            transition: all 0.5s;
+            z-index: 997;
+        }
+
+        /* #header.header-scrolled,
+        #header.header-inner {
+            background: #5D001E;
+            height: 50px;
+        } */
+
+        #header #logo h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        #header #logo h1 span {
+            color: #c9df8a;
+        }
+
+        #header #logo h1 a,
+        #header #logo h1 a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        #header #logo img {
+            padding: 0;
+            margin: 0;
+            max-height: 40px;
+        }
+
+        @media (max-width: 992px) {
+            #header #logo img {
+                max-height: 30px;
+            }
+        }
+
+        /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+        /**
+* Desktop Navigation 
+*/
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar>ul>li {
+            white-space: nowrap;
+            padding: 10px 0 10px 12px;
+        }
+
+        .navbar a,
+        .navbar a:focus {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #234d20;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+            transition: 0.3s;
+            position: relative;
+            padding: 6px 4px;
+        }
+
+        .navbar a i,
+        .navbar a:focus i {
+            font-size: 12px;
+            line-height: 0;
+            margin-left: 5px;
+        }
+
+        .navbar>ul>li>a:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -6px;
+            left: 0;
+            background-color: #c9df8a;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .navbar a:hover:before,
+        .navbar li:hover>a:before,
+        .navbar .active:before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover>a {
+            color: #234d20;
+        }
+
+
+        .navbar .dropdown ul {
+            display: block;
+            position: absolute;
+            left: 12px;
+            top: calc(100% + 30px);
+            margin: 0;
+            padding: 10px 0;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+            transition: 0.3s;
+        }
+
+        .navbar .dropdown ul li {
+            min-width: 200px;
+        }
+
+        .navbar .dropdown ul a {
+            padding: 10px 20px;
+            font-size: 14px;
+            text-transform: none;
+            color: #234d20;
+        }
+
+        .navbar .dropdown ul a i {
+            font-size: 12px;
+        }
+
+        .navbar .dropdown ul a:hover,
+        .navbar .dropdown ul .active:hover,
+        .navbar .dropdown ul li:hover>a {
+            color: #c9df8a;
+        }
+
+        .navbar .dropdown:hover>ul {
+            opacity: 1;
+            top: 100%;
+            visibility: visible;
+        }
+
+        .navbar .dropdown .dropdown ul {
+            top: 0;
+            left: calc(100% - 30px);
+            visibility: hidden;
+        }
+
+        .navbar .dropdown .dropdown:hover>ul {
+            opacity: 1;
+            top: 0;
+            left: 100%;
+            visibility: visible;
+        }
+
+        @media (max-width: 1366px) {
+            .navbar .dropdown .dropdown ul {
+                left: -90%;
+            }
+
+            .navbar .dropdown .dropdown:hover>ul {
+                left: -100%;
+            }
+        }
+
+        /**
+  * Mobile Navigation 
+  */
+        .mobile-nav-toggle {
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            display: none;
+            line-height: 0;
+            transition: 0.5s;
+        }
+
+        @media (max-width: 991px) {
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .navbar ul {
+                display: none;
+            }
+        }
+
+        .navbar-mobile {
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            transition: 0.3s;
+            z-index: 999;
+        }
+
+        .navbar-mobile .mobile-nav-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .navbar-mobile ul {
+            display: block;
+            position: absolute;
+            top: 55px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            padding: 10px 0;
+            background-color: #fff;
+            overflow-y: auto;
+            transition: 0.3s;
+        }
+
+        .navbar-mobile>ul>li {
+            padding: 0;
+        }
+
+        .navbar-mobile a:hover:before,
+        .navbar-mobile li:hover>a:before,
+        .navbar-mobile .active:before {
+            visibility: hidden;
+        }
+
+        .navbar-mobile a,
+        .navbar-mobile a:focus {
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #060c22;
+        }
+
+        .navbar-mobile a:hover,
+        .navbar-mobile .active,
+        .navbar-mobile li:hover>a {
+            color: #c9df8a;
+        }
+
+        .navbar-mobile .getstarted,
+        .navbar-mobile .getstarted:focus {
+            margin: 15px;
+        }
+
+        .navbar-mobile .dropdown ul {
+            position: static;
+            display: none;
+            margin: 10px 20px;
+            padding: 10px 0;
+            z-index: 99;
+            opacity: 1;
+            visibility: visible;
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        }
+
+        .navbar-mobile .dropdown ul li {
+            min-width: 200px;
+        }
+
+        .navbar-mobile .dropdown ul a {
+            padding: 10px 20px;
+        }
+
+        .navbar-mobile .dropdown ul a i {
+            font-size: 12px;
+        }
+
+        .navbar-mobile .dropdown ul a:hover,
+        .navbar-mobile .dropdown ul .active:hover,
+        .navbar-mobile .dropdown ul li:hover>a {
+            color: #c9df8a;
+        }
+
+        .navbar-mobile .dropdown>.dropdown-active {
+            display: block;
+        }
+
         .playlist {
             text-decoration: none;
             color: white;
@@ -540,47 +844,38 @@
 </head>
 
 <body class="hover14 body" style="background-color: #f4f7f6">
-    <!-- navbar -->
-    <nav class="navbar navbar-light" style="background-color: #fdfce9">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/swd.png" alt="" width="20" height="auto" class="d-inline-block align-text-top">
-                <span class="align-middle"><b>&nbsp &nbsp Social Welfare & Development</b></span>
-            </a>
-            <div class="d-flex">
-                <ul class="nav navs">
-                    <li class="nav-item">
-                        <a class="nav-link active nav-events" aria-current="page" href="#"><b>GP2 Activities</b></a>
-                        <div class="footer2 events">
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Utkarsh</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Udaan</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Matadhikar</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Sarthi</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Go-Green</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Socio-Tech</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Avishkar</a></li>
-                                <li class="nav-item mb-2 nav-events"><a href="#" class="nav-link p-0 text-muted fs">Saksham</a></li>
-                            </ul>
-                        </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center " style="background-color: #fff;">
+        <div class="container-fluid container-xxl d-flex align-items-center">
+
+            <div id="logo" class="me-auto">
+                <a href="#" class="scrollto"><img src="./img/swdlogo3.png" alt="" title=""></a>
+            </div>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#">Home</a></li>
+                    <li><a class="nav-link scrollto" href="./team/index.html">Our Team</a></li>
+                    <li class="dropdown"><a href="./flagship/flagship.html" style="text-decoration: none;"><span>Flagship Events</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="./flagship/aatmabodh/aatmabodh.html" style="text-decoration: none;">Aatmabodh</a></li>
+                            <li><a href="./flagship/rr/rr.html" style="text-decoration: none;">Rejuvenating Rashtra</a></li>
+                            <li><a href="./flagship/utkrash/utkarsh.html" style="text-decoration: none;">Utkarsh</a></li>
+                            <li><a href="./flagship/blood-d/blood.html" style="text-decoration: none;">Blood-d</a></li>
+                            <li><a href="./flagship/miatre/miatre.html" style="text-decoration: none;">Mi Atre Boltoy</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active nav-events" aria-current="page" href="#"><b>Flagship</b></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active nav-events" aria-current="page" href="#"><b>Our Team</b></a>
-                    </li> -->
+                    <li><a class="nav-link scrollto" href="./GP2/index.php">GP2 Activities</a></li>
+                    <li><a class="nav-link scrollto" href="#schedule">Up-coming Event Schedule</a></li>
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <img src="img/logo-vit-1.png" alt="" width="30" height="auto" class="d-inline-block align-text-top">
+                <i class="bi bi-list mobile-nav-toggle" style="color: #234d20;"></i>
+            </nav>
+            <div id="logo" class="ms-auto">
+                <a href="#" class="scrollto"><img src="./img/logo-vit-1.png" alt="" title=""></a>
             </div>
         </div>
-    </nav>
-
+    </header>
+    <!-- End Header -->
 
     <!-- who we are -->
     <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
@@ -682,22 +977,22 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Home</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Our Team</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./index.php" style="text-decoration: none;">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./team/index.html" style="text-decoration: none;">Our Team</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Event Schedule</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Flagship Events</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">GP2 Activities</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./flagship/flagship.html" style="text-decoration: none;">Flagship Events</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./GP2/index.php" style="text-decoration: none;">GP2 Activities</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Flagship</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">AATMABODH</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">REJUVENATING RASHTRA</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">UTKARSH</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">MI ATRE BOLTOY</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">BLOOD-D</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./flagship/aatmabodh/aatmabodh.html" style="text-decoration: none;">AATMABODH</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./flagship/rr/rr.html" style="text-decoration: none;">REJUVENATING RASHTRA</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./flagship/utkrash/utkarsh.html" style="text-decoration: none;">UTKARSH</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./flagship/miatre/miatre.html" style="text-decoration: none;">MI ATRE BOLTOY</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./flagship/blood-d/blood.html" style="text-decoration: none;">BLOOD-D</a></li>
                         </ul>
                     </div>
 
@@ -749,30 +1044,120 @@
     <script src="js/main.js"></script>
 
     <script>
-        let navSlide = () => {
-            const burger = document.querySelector('.burger');
-            const body = document.querySelector('.body');
-            const nav = document.querySelector('.navs');
-            const navlinks = document.querySelectorAll('.navs li')
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+            el = el.trim()
+            if (all) {
+                return [...document.querySelectorAll(el)]
+            } else {
+                return document.querySelector(el)
+            }
+        }
 
-            burger.addEventListener("click", () => {
-                nav.classList.toggle("nav-active");
-                body.classList.toggle("hidden");
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+            let selectEl = select(el, all)
+            if (selectEl) {
+                if (all) {
+                    selectEl.forEach(e => e.addEventListener(type, listener))
+                } else {
+                    selectEl.addEventListener(type, listener)
+                }
+            }
+        }
 
-                navlinks.forEach((links, index) => {
-                    if (links.style.animation) {
-                        links.style.animation = ``
-                    } else {
-                        links.style.animation = `navLinkFade 0.5s ease forwards ${index / 3 + 0.8}s`
-                    }
-                });
+        /**
+         * Easy on scroll event listener 
+         */
+        const onscroll = (el, listener) => {
+            el.addEventListener('scroll', listener)
+        }
 
-                burger.classList.toggle("toggle");
-            });
+        /**
+         * Navbar links active state on scroll
+         */
+        let navbarlinks = select('#navbar .scrollto', true)
+        const navbarlinksActive = () => {
+            let position = window.scrollY + 200
+            navbarlinks.forEach(navbarlink => {
+                if (!navbarlink.hash) return
+                let section = select(navbarlink.hash)
+                if (!section) return
+                if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+                    navbarlink.classList.add('active')
+                } else {
+                    navbarlink.classList.remove('active')
+                }
+            })
+        }
+        window.addEventListener('load', navbarlinksActive)
+        onscroll(document, navbarlinksActive)
+        /**
+         * Toggle .header-scrolled class to #header when page is scrolled
+         */
+        let selectHeader = select('#header')
+        if (selectHeader) {
+            const headerScrolled = () => {
+                if (window.scrollY > 100) {
+                    selectHeader.classList.add('header-scrolled')
+                } else {
+                    selectHeader.classList.remove('header-scrolled')
+                }
+            }
+            window.addEventListener('load', headerScrolled)
+            onscroll(document, headerScrolled)
+        }
+        /**
+         * Mobile nav toggle
+         */
+        on('click', '.mobile-nav-toggle', function(e) {
+            select('#navbar').classList.toggle('navbar-mobile')
+            this.classList.toggle('bi-list')
+            this.classList.toggle('bi-x')
+        })
 
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on('click', '.navbar .dropdown > a', function(e) {
+            if (select('#navbar').classList.contains('navbar-mobile')) {
+                e.preventDefault()
+                this.nextElementSibling.classList.toggle('dropdown-active')
+            }
+        }, true)
 
-        };
-        navSlide();
+        /**
+         * Scrool with ofset on links with a class name .scrollto
+         */
+        on('click', '.scrollto', function(e) {
+            if (select(this.hash)) {
+                e.preventDefault()
+
+                let navbar = select('#navbar')
+                if (navbar.classList.contains('navbar-mobile')) {
+                    navbar.classList.remove('navbar-mobile')
+                    let navbarToggle = select('.mobile-nav-toggle')
+                    navbarToggle.classList.toggle('bi-list')
+                    navbarToggle.classList.toggle('bi-x')
+                }
+                scrollto(this.hash)
+            }
+        }, true)
+
+        /**
+         * Scroll with ofset on page load with hash links in the url
+         */
+        window.addEventListener('load', () => {
+            if (window.location.hash) {
+                if (select(window.location.hash)) {
+                    scrollto(window.location.hash)
+                }
+            }
+        });
     </script>
 </body>
 
