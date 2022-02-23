@@ -764,7 +764,7 @@ body {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: #234d20;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
@@ -815,7 +815,7 @@ body {
   font-size: 16px;
 }
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: #c9df8a;
   color: #fff;
 }
 #footer .footer-top h4 {
@@ -825,7 +825,7 @@ body {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid #c9df8a;
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
@@ -837,7 +837,7 @@ body {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: #c9df8a;
   font-size: 18px;
 }
 #footer .footer-top .footer-links ul li {
@@ -851,7 +851,7 @@ body {
   color: #eee;
 }
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: #c9df8a;
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -868,7 +868,7 @@ body {
   width: 65%;
 }
 #footer .footer-top .footer-newsletter input[type=submit] {
-  background: #f82249;
+  background: #c9df8a;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -878,9 +878,10 @@ body {
   cursor: pointer;
 }
 #footer .footer-top .footer-newsletter input[type=submit]:hover {
-  background: #e0072f;
+  background: #c9df8a;
 }
 #footer .copyright {
+  background: #234d20;
   text-align: center;
   padding-top: 30px;
 }
