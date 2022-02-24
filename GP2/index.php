@@ -1117,7 +1117,7 @@ $a_list   = $conn->query($activity);
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-info">
-                        <img src="img/swdlogo3.png" alt="Logo">
+                        <img src="./../img/swdlogo3.png" alt="Logo">
                         <p>Social Welfare and Development Committee with the motto of "Empowering Society, Transforming Lives" has
                             been helping society for several years and continues to do so in any circumstance.
                         </p>
@@ -1126,10 +1126,10 @@ $a_list   = $conn->query($activity);
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Home</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Our Team</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Event Schedule</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Flagship Events</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../index.php" style="text-decoration: none;">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../team/index.html" style="text-decoration: none;">Our Team</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../Calender/cal.html" style="text-decoration: none;">Event Schedule</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../flagship/flagship.html" style="text-decoration: none;">Flagship Events</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">GP2 Activities</a></li>
                         </ul>
                     </div>
@@ -1137,11 +1137,11 @@ $a_list   = $conn->query($activity);
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Flagship</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">AATMABODH</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">REJUVENATING RASHTRA</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">UTKARSH</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">MI ATRE BOLTOY</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">BLOOD-D</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../flagship/aatmabodh/aatmabodh.html" style="text-decoration: none;">AATMABODH</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../flagship/blood-d/blood.html" style="text-decoration: none;">REJUVENATING RASHTRA</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../flagship/miatre/miatre.html" style="text-decoration: none;">UTKARSH</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../flagship/rr/rr.html" style="text-decoration: none;">MI ATRE BOLTOY</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./../flagship/utkarsh/utkarsh.html" style="text-decoration: none;">BLOOD-D</a></li>
                         </ul>
                     </div>
 

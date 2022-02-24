@@ -867,7 +867,7 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="./GP2/index.php">GP2 Activities</a></li>
-                    <li><a class="nav-link scrollto" href="#schedule">Up-coming Event Schedule</a></li>
+                    <li><a class="nav-link scrollto" href="./Calender/cal.html">Wheel of Events</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle" style="color: #234d20;"></i>
             </nav>
@@ -980,7 +980,7 @@
                         <ul>
                             <li><i class="bi bi-chevron-right"></i> <a href="./index.php" style="text-decoration: none;">Home</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="./team/index.html" style="text-decoration: none;">Our Team</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#" style="text-decoration: none;">Event Schedule</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./Calender/cal.html" style="text-decoration: none;">Event Schedule</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="./flagship/flagship.html" style="text-decoration: none;">Flagship Events</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="./GP2/index.php" style="text-decoration: none;">GP2 Activities</a></li>
                         </ul>
