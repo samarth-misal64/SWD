@@ -325,7 +325,8 @@
         .navbar-mobile .dropdown>.dropdown-active {
             display: block;
         }
-
+       /* End of footer */
+       
         .playlist {
             text-decoration: none;
             color: white;
