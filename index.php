@@ -934,7 +934,7 @@
                 helpful nature amongst people and move one step closer to achieving our ultimate goal-sustainable
                 development.</p>
             <div class="container-fluid my-4">
-                <a class="button" href="GP2/index.php" role="button"><span style="text-transform: uppercase; font-weight: bold;">Click to Register</span></a>
+                <a class="button" href="GP2/index.php" role="button"><span style="text-transform: uppercase; font-weight: bold;">Know More</span></a>
             </div>
         </div>
         <div class="image">
