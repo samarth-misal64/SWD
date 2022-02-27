@@ -530,7 +530,7 @@
     </style>
 </head>
 <!-- 5D001E -->
-<body class="body" style="overflow-y: hidden;">
+<body class="body" style="overflow-y: hidden;" oncontextmenu="return false">
 
 <!--     <?php
     // include 'register.php';
