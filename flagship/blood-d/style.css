@@ -978,11 +978,11 @@ body {
 #contact-2 .contact-address, #contact .contact-phone, #contact .contact-email {
   margin-bottom: 20px;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   #contact-2 .contact-address, #contact .contact-phone, #contact .contact-email {
     padding: 20px 0;
   }
-}
+} */
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
