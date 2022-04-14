@@ -931,17 +931,17 @@ $a_list   = $conn->query($activity);
                         <div class="contentc">
                             <div class="boxc">
                                 <div class="iconc"><i class="fas fa-users"></i></div>
-                                <div class="counter">100+</div>
+                                <div class="counter">165+</div>
                                 <div class="textc">Coordinators</div>
                             </div>
                             <div class="boxc">
                                 <div class="iconc"><i class="fas fa-history"></i></div>
-                                <div class="counter">900+</div>
+                                <div class="counter">1600+</div>
                                 <div class="textc">Volunteers</div>
                             </div>
                             <div class="boxc">
                                 <div class="iconc"><i class="fas fa-users"></i></div>
-                                <div class="counter">330+</div>
+                                <div class="counter">2130+</div>
                                 <div class="textc">Participants</div>
                             </div>
                         </div>
