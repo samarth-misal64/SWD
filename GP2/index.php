@@ -572,19 +572,20 @@ $a_list   = $conn->query($activity);
                                     these programs foster the development of children's personalities, educate and honor
                                     women and people with disabilities, as well as strengthen families and communities
                                     as a result.</p>
+                                    <button onclick="location.href = './form/index.php';">GP2 STATUS</button>
                                 <!-- <button data-bs-toggle="modal" href="#MuskaanModalToggle">REGISTER HERE</button> -->
-                                <!--  -->
+                                <!--
                                 <div class="modal fade" id="MuskaanModalToggle" aria-hidden="true"
                                     aria-labelledby="MuskaanModalToggleLabel" tabindex="-1">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content" style="z-index: 4;">
-                                            <form action="" method="POST">
+                                            <form action="" method="POST"> -->
                                                 <!-- autocomplete="off" -->
-                                                <div class="modal-header">
+                                                <!-- <div class="modal-header">
                                                     <h5 class="modal-title" id="MuskaanModalToggleLabel">GP2
-                                                        Registration Form</h5>
+                                                        Registration Form</h5> -->
                                                     <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button> -->
+                                                        aria-label="Close"></button>
 
                                                     <a class="btn-close" data-bs-dismiss="modal" aria-label="close"
                                                         href="#MuskaanModalToggle" role="button"></a>
@@ -595,7 +596,7 @@ $a_list   = $conn->query($activity);
                                                         pattern="[a-zA-Z0-9._%+-]+@vit.edu$">
                                                     <input type="tel" name="u_contact" placeholder="Contact Number"
                                                         maxlength="10" pattern="^[0-9]{10}$" );>
-                                                    <input type="tel" maxlength="8" name="u_prn" placeholder="PRN">
+                                                    <input type="tel" maxlength="8" name="u_prn" placeholder="PRN">  -->
                                                     <!-- <?php 
                                         if($r_set = $conn->query("SELECT * from department"))
                                         {
@@ -610,7 +611,7 @@ $a_list   = $conn->query($activity);
                                         {
                                             echo $conn->error;
                                         } 
-                                    ?> -->
+                                    ?>
                                                     <select name="u_year" placeholder="Year" id="sel">
                                                         <option value="" selected disabled hidden>Academic Year</option>
                                                         <option value="First">First</option>
@@ -630,7 +631,7 @@ $a_list   = $conn->query($activity);
                                                     <input type="tel" maxlength="3" name="u_roll"
                                                         placeholder="Roll Number">
                                                     <textarea name="u_addr" placeholder="Current Address" rows="2"
-                                                        cols="20" id="sel"></textarea>
+                                                        cols="20" id="sel"></textarea> -->
                                                    <!--  <?php 
                                         if($r_set = $conn->query("SELECT * from activity"))
                                         {
@@ -646,7 +647,7 @@ $a_list   = $conn->query($activity);
                                             echo $conn->error;
                                         } 
                                         $conn->close();
-                                    ?> -->
+                                    ?>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <input type="submit" name="submit" value="SUBMIT">
@@ -654,8 +655,8 @@ $a_list   = $conn->query($activity);
                                             </form>
                                         </div>
                                     </div>
-                                </div>
-                                <!--  -->
+                                </div>-->
+
                                 <!-- <div class="modal fade" aria-hidden="true" tabindex="-1">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">

@@ -38,12 +38,12 @@
 						GP2 ACTIVITY STATUS
 					</span>
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter your EMAIL">
-						<input class="input100" type="text" name="email" placeholder="EMAIL">
+						<input class="input100" type="text" name="email" placeholder="Your E-mail ID">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter GR NO">
-						<input class="input100" type="password" name="grno"  length=8 placeholder="GR NO">
+						<input class="input100" type="password" name="grno"  length=8 placeholder="Your PNR Number">
 						<span class="focus-input100"></span>
 					</div>
 
