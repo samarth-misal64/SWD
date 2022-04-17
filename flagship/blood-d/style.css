@@ -1116,7 +1116,7 @@ body {
 # Subscribe Section
 --------------------------------------------------------------*/
 #subscribe {
-  padding: 60px;
+  padding: 200px;
   background: url(_G9A0027.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -1124,7 +1124,6 @@ body {
 }
 #subscribe:before {
   content: "";
-  /* background: rgba(6, 12, 34, 0.6); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1139,7 +1138,7 @@ body {
 #subscribe .section-header h2, #subscribe p {
   color: #fff;
 }
-#subscribe input {
+/* #subscribe input {
   background: #fff;
   color: #060c22;
   border: 0;
@@ -1172,7 +1171,7 @@ body {
   #subscribe button {
     margin-top: 10px;
   }
-}  
+}   */
 /*--------------------------------------------------------------
 # Venue Section
 --------------------------------------------------------------*/
