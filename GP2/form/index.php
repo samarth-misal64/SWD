@@ -1,8 +1,11 @@
+<?php include 'Alert.php'; ?>
+<?php include '../config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Login V8</title>
+	<title>GP2 Status</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -26,24 +29,44 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		#message {
+			position: fixed;
+			top: 30%;
+			left: 50%;
+			width: 50%;
+		}
+
+		#inner-message {
+			margin: 0 auto;
+		}
+		#main-container{
+			position: fixed;
+			left: -20%;
+		}
+	</style>
 </head>
 
 <body>
 
-	<div class="limiter">
+	<div class="limiter" id="main-container">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-150" method="POST" onsubmit="index.php">
+				<form class="login100-form validate-form p-l-85 p-r-55 p-t-150" method="POST" onsubmit="index.php">
 					<span class="login100-form-title">
 						GP2 ACTIVITY STATUS
 					</span>
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter your EMAIL">
-						<input class="input100" type="text" name="email" placeholder="Your E-mail ID">
+						<input class="input100" type="text" name="email" placeholder="EMAIL">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter GR NO">
-						<input class="input100" type="password" name="grno"  length=8 placeholder="Your PNR Number">
+						<input class="input100" type="password" name="grno" length=8 placeholder="GR NO">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -54,7 +77,6 @@
 						<!-- <span class="txt1">
 							Forgot
 						</span>
-
 						<a href="#" class="txt2">
 							Username / Password?
 						</a> -->
@@ -94,6 +116,7 @@
 	<script src="js/main.js"></script>
 
 	<?php
+
 	if (!empty($_POST)) {
 		$grno = $_POST['grno'];
 		$email = $_POST['email'];
@@ -104,45 +127,49 @@
 		// $dbPassword = "U6MBVDjNxUe";
 		// $dbname     = "epiz_29618754_registration";
 
-		include('../config.php');
-		// $host       = "localhost";
-		// $dbUsername = "root";
-		// $dbPassword = "";
-		// $dbname     = "swd";
+// 		$host       = "localhost";
+// 		$dbUsername = "root";
+// 		$dbPassword = "";
+// 		$dbname     = "swd";
 
 		$fin_res = "";
 
 		//Create conn
-		$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-		if (mysqli_connect_error()) 
-		{
+// 		$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+		if (mysqli_connect_error()) {
 			die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
-		} else 
-		{
+		} else {
 			$query = "select * from result where grno=" . $grno . " and email='" . $email . "'";
 			$result = mysqli_query($conn, $query);
-			if ($result) 
-			{
+			$activity_name = "";
+			$final_res = "";
+			if ($result) {
 				while ($row = mysqli_fetch_array($result)) {
 					// echo $row['email'] . " " . $row['grno'] . " " . $row['activity_name'] . " " . $row['result'];
+					$activity_name = $row['activity_name'];
+					$final_res  = $row['result'];
 					$fin_res .= $row['email'] . " " . $row['grno'] . " " . $row['activity_name'] . " " . $row['result'];
 				}
-			} else 
-			{
+			} else {
 				// echo "grno: " . $grno . " email: " . $email . " :)";
 				// echo "result is empty";
 				// echo "<script>alert('Incorrect Credentials')</script>";
 			}
-			
-			if(!empty($fin_res))
-				echo "<script>alert('" . $fin_res . "')</script>";
-			else{
-				echo "<script>alert('Incorrect Credentials')</script>";
+
+			if (!empty($fin_res))
+			{
+				if($final_res=='Pass')
+					successAlert($activity_name, $final_res);
+				else
+					dangerAlert($activity_name, $final_res);
 			}
+			else
+				dangerAlertCredentials();
 
 		}
-		
 	}
+
+
 	?>
 
 </body>
