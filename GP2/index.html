@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GP2</title>
+    <link rel="icon" href="./../img/SWD Youtube2.png" type="image/x-icon">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +20,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -70,11 +71,6 @@
         .img-raised {
             box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
         }
-
-
-
-        /* ============ Card Blog ============ */
-
         .card-blog {
             margin-top: 30px;
         }
@@ -529,30 +525,6 @@
 </head>
 <!-- 5D001E -->
 <body class="body" style="overflow-y: hidden;" oncontextmenu="return false">
-<?php
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', true);
-?>
-<!--     <?php
-    // include 'register.php';
-
-
-$host       = "sql303.epizy.com";
-$dbUsername = "epiz_29618754";
-$dbPassword = "U6MBVDjNxUe";
-$dbname     = "epiz_29618754_registration";
-
-//Create conn
-
-$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-
-$department = "select dept_name from department where 1";
-$d_list     = $conn->query($department);
-
-$activity = "select a_name from activity where 1";
-$a_list   = $conn->query($activity);
-
-?> -->
     <div class="main-wrapper" >
         <div class="site-content-wrapper">
             <div class="site-content" style="overflow-x:hidden;">
@@ -573,98 +545,7 @@ $a_list   = $conn->query($activity);
                                     these programs foster the development of children's personalities, educate and honor
                                     women and people with disabilities, as well as strengthen families and communities
                                     as a result.</p>
-                                    <button onclick="location.href = './form/index.php';">GP2 STATUS</button>
-                                <!-- <button data-bs-toggle="modal" href="#MuskaanModalToggle">REGISTER HERE</button> -->
-                                <!--
-                                <div class="modal fade" id="MuskaanModalToggle" aria-hidden="true"
-                                    aria-labelledby="MuskaanModalToggleLabel" tabindex="-1">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content" style="z-index: 4;">
-                                            <form action="" method="POST"> -->
-                                                <!-- autocomplete="off" -->
-                                                <!-- <div class="modal-header">
-                                                    <h5 class="modal-title" id="MuskaanModalToggleLabel">GP2
-                                                        Registration Form</h5> -->
-                                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-
-                                                    <a class="btn-close" data-bs-dismiss="modal" aria-label="close"
-                                                        href="#MuskaanModalToggle" role="button"></a>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <input type="text" name="u_fname" placeholder="Full Name">
-                                                    <input type="text" name="u_email" placeholder="Institute Email Id"
-                                                        pattern="[a-zA-Z0-9._%+-]+@vit.edu$">
-                                                    <input type="tel" name="u_contact" placeholder="Contact Number"
-                                                        maxlength="10" pattern="^[0-9]{10}$" );>
-                                                    <input type="tel" maxlength="8" name="u_prn" placeholder="PRN">  -->
-                                                    <!-- <?php 
-                                        if($r_set = $conn->query("SELECT * from department"))
-                                        {
-                                            echo "<select name='dept_id' id='sel'>";
-                                            echo "<option value='' selected disabled hidden>Department</option>";
-                                            while ($row = $r_set->fetch_assoc()) 
-                                            {
-                                                echo "<option value=". $row['dept_id'] . ">" . $row['dept_name'] . "</option>";
-                                            }
-                                            echo "</select>";
-                                        }else
-                                        {
-                                            echo $conn->error;
-                                        } 
-                                    ?>
-                                                    <select name="u_year" placeholder="Year" id="sel">
-                                                        <option value="" selected disabled hidden>Academic Year</option>
-                                                        <option value="First">First</option>
-                                                        <option value="Second">Second</option>
-                                                        <option value="Third">Third</option>
-                                                        <option value="Fourth">Fourth</option>
-                                                    </select>
-                                                    <select name="u_div" placeholder="Division" id="sel">
-                                                        <option value="" selected disabled hidden>Division</option>
-                                                        <option value="A">A</option>
-                                                        <option value="B">B</option>
-                                                        <option value="C">C</option>
-                                                        <option value="D">D</option>
-                                                        <option value="E">E</option>
-                                                        <option value="F">F</option>
-                                                    </select>
-                                                    <input type="tel" maxlength="3" name="u_roll"
-                                                        placeholder="Roll Number">
-                                                    <textarea name="u_addr" placeholder="Current Address" rows="2"
-                                                        cols="20" id="sel"></textarea> -->
-                                                   <!--  <?php 
-                                        if($r_set = $conn->query("SELECT * from activity"))
-                                        {
-                                            echo "<select name='a_id' id='sel'>";
-                                            echo "<option value='' selected disabled hidden>Activity</option>";
-                                            while ($row = $r_set->fetch_assoc()) 
-                                            {
-                                                echo "<option value=".$row['a_id'].">".$row['a_name']."</option>";
-                                            }
-                                            echo "</select>";
-                                        }else
-                                        {
-                                            echo $conn->error;
-                                        } 
-                                        $conn->close();
-                                    ?>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <input type="submit" name="submit" value="SUBMIT">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>-->
-
-                                <!-- <div class="modal fade" aria-hidden="true" tabindex="-1">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            
-                                        </div>
-                                    </div>
-                                </div> -->
+                                <button onclick="location.href = './form/index.php';" formtarget="_blank">GP2 STATUS</button>
                             </div>
                         </div>
                     </div>
@@ -821,53 +702,7 @@ $a_list   = $conn->query($activity);
                         </div>
                     </div>
                 </section>
-                <!--        <section>
-        <div class="containers">
-        <h1 class="section-heading">OTHER ACTIVITIES</h1>
-        <div class="cards-2 section-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card card-blog">
-                            <div class="card-image">
-                                <a href="#"> <img class="img img-raised" src="./images/i1.jpg"> </a>
-                                <div class="ripple-cont"></div>
-                            </div>
-                            <div class="table">
-                                
-                                <h4 class="text-center" style="padding-top: 1rem;">MI ATRE BOLTOY</h4>
-                                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus. Praesent justo metus, pharetra vel nibh sit amet, tincidunt posuere nulla. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-blog">
-                            <div class="card-image">
-                                <a href="#"> <img class="img img-raised" src="./images/i1.jpg"> </a>
-                            </div>
-                            <div class="table">                                    
-                                <h4 class="text-center" style="padding-top: 1rem;">SMP</h4>
-                                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus. Praesent justo metus, pharetra vel nibh sit amet, tincidunt posuere nulla. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-blog">
-                            <div class="card-image">
-                                <a href="#"> <img class="img img-raised" src="./images/i1.jpg"> </a>
-                            </div>
-                            <div class="table">
-                                
-                                 <h4 class="text-center" style="padding-top: 1rem;">TEACHER'S ASSISTANCE</h4>
-                                <p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipis cingelit. Etiam lacinia elit et placerat finibus. Praesent justo metus, pharetra vel nibh sit amet, tincidunt posuere nulla. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
+
                 <section>
                     <div class="containers">
                         <h1 class="section-heading">WHAT OUR PARTICIPANTS SAY</h1>
@@ -1233,11 +1068,6 @@ $a_list   = $conn->query($activity);
             });
         }, 4000);
     </script>
-
-<!--    <?php
- include 'register.php';?> -->
-
-
 </body>
 
 </html>

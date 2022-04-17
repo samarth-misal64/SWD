@@ -866,7 +866,15 @@
                             <li><a href="./flagship/miatre/miatre.html" style="text-decoration: none;">Mi Atre Boltoy</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="./GP2/index.php">GP2 Activities</a></li>
+                    <li class="dropdown"><a href="#"
+                            style="text-decoration: none;"><span>Publications</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="./magazine/index.html" style="text-decoration: none;">Magazine</a></li>
+                            <li><a href="./News/index.html" style="text-decoration: none;">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="./GP2/index.html">GP2 Activities</a></li>
                     <li><a class="nav-link scrollto" href="./nss/nss.html">NSS</a></li>
                     <li><a class="nav-link scrollto" href="./Calender/cal.html">Wheel of Events</a></li>
                 </ul>
@@ -935,7 +943,7 @@
                 helpful nature amongst people and move one step closer to achieving our ultimate goal-sustainable
                 development.</p>
             <div class="container-fluid my-4">
-                <a class="button" href="GP2/index.php" role="button"><span style="text-transform: uppercase; font-weight: bold;">Know More</span></a>
+                <a class="button" href="GP2/index.html" role="button"><span style="text-transform: uppercase; font-weight: bold;">Know More</span></a>
             </div>
         </div>
         <div class="image">
@@ -983,7 +991,7 @@
                             <li><i class="bi bi-chevron-right"></i> <a href="./team/index.html" style="text-decoration: none;">Our Team</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="./Calender/cal.html" style="text-decoration: none;">Event Schedule</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="./flagship/flagship.html" style="text-decoration: none;">Flagship Events</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="./GP2/index.php" style="text-decoration: none;">GP2 Activities</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="./GP2/index.html" style="text-decoration: none;">GP2 Activities</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="./nss/nss.html" style="text-decoration: none;">NSS</a></li>
                         </ul>
                     </div>
