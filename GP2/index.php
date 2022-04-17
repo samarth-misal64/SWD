@@ -12,19 +12,17 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <style type="text/css">
         .card {
             display: inline-block;
@@ -531,7 +529,10 @@
 </head>
 <!-- 5D001E -->
 <body class="body" style="overflow-y: hidden;" oncontextmenu="return false">
-
+<?php
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', true);
+?>
 <!--     <?php
     // include 'register.php';
 
@@ -1181,21 +1182,19 @@ $a_list   = $conn->query($activity);
     </div>
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"> </script>
     <script type="text/javascript">
         function mousehandler(e) {
             var myevent = (isNS) ? e : event;
             var eventbutton = (isNS) ? myevent.which : myevent.button;
             if ((eventbutton == 2) || (eventbutton == 3)) return false;
         }
-        document.oncontextmenu = mischandler;
+//         document.oncontextmenu = mischandler;
         document.onmousedown = mousehandler;
         document.onmouseup = mousehandler;
 
@@ -1235,86 +1234,9 @@ $a_list   = $conn->query($activity);
         }, 4000);
     </script>
 
-    <script>
-        let navResize = () => {
-            let navbrand = document.getElementById("brandname")
-            if (window.innerWidth < 760) {
-                navbrand.innerText = "SW&D"
-            } else {
-                navbrand.innerText = "Social Welfare & Development"
-            }
-        };
-        let navSlide = () => {
-            const burger = document.querySelector('.burger');
-            const body = document.querySelector('.body');
-            const nav = document.querySelector('.navs');
-            const navlinks = document.querySelectorAll('.navs li')
+<!--    <?php
+ include 'register.php';?> -->
 
-            burger.addEventListener("click", () => {
-                nav.classList.toggle("nav-active");
-                body.classList.toggle("hidden");
-
-                navlinks.forEach((links, index) => {
-                    if (links.style.animation) {
-                        links.style.animation = ``
-                    }
-                    else {
-                        links.style.animation = `navLinkFade 0.5s ease forwards ${index / 3 + 0.8}s`
-                    }
-                });
-
-                burger.classList.toggle("toggle");
-            });
-
-
-        };
-        navSlide();
-        navResize();
-    </script>
-    <script>
-           /**
-     * Easy selector helper function
-     */
-    const select = (el, all = false) => {
-      el = el.trim()
-      if (all) {
-        return [...document.querySelectorAll(el)]
-      } else {
-        return document.querySelector(el)
-      }
-    }
-
-    /**
-     * Easy event listener function
-     */
-    const on = (type, el, listener, all = false) => {
-      let selectEl = select(el, all)
-      if (selectEl) {
-        if (all) {
-          selectEl.forEach(e => e.addEventListener(type, listener))
-        } else {
-          selectEl.addEventListener(type, listener)
-        }
-      }
-    }
-
-    /**
-     * Easy on scroll event listener
-     */
-    const onscroll = (el, listener) => {
-      el.addEventListener('scroll', listener)
-    }
-
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-    </script>
-
-<!--     <?php
-include 'register.php';
-
-?> -->
 
 </body>
 

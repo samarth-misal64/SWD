@@ -1,6 +1,3 @@
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
-
 :root {
     --primary:#234d20;
     --secondary:#232B38;
@@ -12,6 +9,7 @@
 }
 
 *{
+    font-family: "Raleway", sans-serif;
     padding:0;
     margin:0;
     box-sizing: border-box;
@@ -108,7 +106,6 @@
     display:block;
     width:100%;
     height:69px;
-    background-image:url(../icons/shadow.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -124,7 +121,7 @@
     display:block;
     width:100%;
     height:69px;
-    background-image:url(../icons/shadow-sm.svg);
+    /*background-image:url(../icons/shadow-sm.svg);*/
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;

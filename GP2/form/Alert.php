@@ -47,7 +47,7 @@ function dangerAlertCredentials()
   echo '<div class="row" id="message">
           <div class="col-md-8 mx-auto alert alert-danger fade-in" role="alert" >
             <h4 class="alert-heading">Invalid Credentials !</h4>
-            <p> Contact Us if you face any issues.</p>
+            <p> Contact GP2 heads, if your status is not visible.</p>
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         </div>
 </div>';
