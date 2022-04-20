@@ -36,11 +36,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style>
+
 		#message {
-			position: fixed;
-			top: 30%;
-			left: 50%;
-			width: 50%;
+			top: 10%;
+			width:
 		}
 
 		#inner-message {
@@ -48,7 +47,6 @@
 		}
 		#main-container{
 			position: fixed;
-			left: -20%;
 		}
 	</style>
 </head>

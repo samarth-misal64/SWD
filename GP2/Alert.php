@@ -31,7 +31,7 @@ function dangerAlert($activity_name, $final_res)
   echo '<div class="row" id="message">
           <div class="col-md-8 mx-auto alert alert-danger fade-in" role="alert" >
             <h4 class="alert-heading">Sorry To Inform!</h4>
-            <p>You have not cleared your GP2 activity.</p>
+            <p>You failed in your GP2 activity.</p>
             <hr>
             <strong>
               <p class="mb-0">Activity Name: '. $activity_name .'</p>
@@ -44,14 +44,11 @@ function dangerAlert($activity_name, $final_res)
 
 function dangerAlertCredentials()
 {
-  echo '<div class="container-fluid"><div class="row " id="message">
-  <div class="col-md-10 col-md-offset-1">
-          <div class="alert alert-danger text-center center-block alert-dismissible fade-in" role="alert" style="width: 80%;" >
+  echo '<div class="row" id="message">
+          <div class="col-md-8 mx-auto alert alert-danger fade-in" role="alert" >
             <h4 class="alert-heading">Invalid Credentials !</h4>
-            <p> Contact GP2 heads, if your status is not visible.</p>
+            <p> Contact Us if you face any issues.</p>
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        </div>
-        </div>
         </div>
 </div>';
 }
