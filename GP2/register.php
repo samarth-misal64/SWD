@@ -125,7 +125,7 @@ if (isset($_POST['submit']) && $_POST['submit'] != "") {
 
             if ($slots == 0) {
                 echo "<script>";
-                echo "alert('All Slots Are Full. Choose Another Activity" . $slots . "');";
+                echo "alert('There are no more slots available for this activity or the registration has not yet begun!" . $slots . "');";
                 echo "</script>";
                 $q = -2;
             }
@@ -139,7 +139,7 @@ if (isset($_POST['submit']) && $_POST['submit'] != "") {
                 if ($u_gender == "male")
                     if ($row2['m_cnt'] == 0) {
                         echo "<script>";
-                        echo "alert('All Slots For Boys Are Full. Choose Another Activity');";
+                        echo "alert('There are no more slots available for this activity for boys or the registration has not yet begun!');";
                         echo "</script>";
                         $q = -2;
                     } else {
@@ -149,7 +149,7 @@ if (isset($_POST['submit']) && $_POST['submit'] != "") {
                 else
                     if ($slots == 0) {
                     echo "<script>";
-                    echo "alert('All Slots For Girls Are Full. Choose Another Activity');";
+                    echo "alert('There are no more slots available for this activity for girls or the registration has not yet begun!');";
                     echo "</script>";
                     $q = -2;
                 } else {
