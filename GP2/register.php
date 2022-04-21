@@ -122,9 +122,7 @@ if (isset($_POST['submit']) && $_POST['submit'] != "") {
             // echo "</script>";
 
             $slots = $row2['a_slots'];
-            echo "<script>";
-            echo "alert('Checking slots....dry run " . $slots . "');";
-            echo "</script>";
+
             if ($slots == 0) {
                 echo "<script>";
                 echo "alert('All Slots Are Full. Choose Another Activity" . $slots . "');";
