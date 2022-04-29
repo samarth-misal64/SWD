@@ -656,10 +656,7 @@
                                                             ?>
                                                             <select name="u_year" placeholder="Year" id="sel">
                                                                 <option value="" selected disabled hidden>Academic Year</option>
-                                                                <option value="First">First</option>
                                                                 <option value="Second">Second</option>
-                                                                <option value="Third">Third</option>
-                                                                <option value="Fourth">Fourth</option>
                                                             </select>
                                                             <select name="u_div" placeholder="Division" id="sel">
                                                                 <option value="" selected disabled hidden>Division</option>
